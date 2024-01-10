@@ -1,0 +1,32 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDR Tareas</title>
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+ 
+</head>
+<body>
+    <header>
+    <nav class="botones-container">
+        <a href = "{% url 'inicio' %}">Home</a>
+        {% comment %} <a href = "{% url 'iniciar_sesion' %}">Iniciar sesión</a>
+        <a href = "{% url 'registro' %}">Registro</a>         {% endcomment %}
+        {% comment %} <a href = "{% url 'agtarea' %}">Agregar Tareas</a>
+        <a href = "{% url 'tareas' %}">Tus Tareas</a>
+        <a href = "{% url 'logout_view' %}">Cerrar sesión</a> {% endcomment %}
+    </nav>
+    </header>  
+    
+</body>
+<main>
+    {% block contenido %}
+    </br>
+    <h1>Bienvenido a GDR Tareas!!</h1>
+    {% endblock contenido %}
+</main>
+</html>

@@ -1,0 +1,17 @@
+{% extends "core/index.html"%}
+{% load static %}
+
+{% block titulo %}
+Agregar tareas
+{% endblock titulo %}
+
+{% block contenido %}
+<h1>Agregá una tarea</h1>
+
+<form method="POST" action="{% url 'agtarea' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Enviar</button>
+</form>
+
+{% endblock contenido %}

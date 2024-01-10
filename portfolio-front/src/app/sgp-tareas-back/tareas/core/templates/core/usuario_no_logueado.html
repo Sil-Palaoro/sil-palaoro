@@ -1,0 +1,13 @@
+{% extends "core/index.html"%}
+{% load static %}
+
+{% block titulo %}
+    No logueado
+{% endblock titulo %}
+
+{% block contenido %}
+<h1>Usuario no logueado</h1>
+<p>
+<a href = "{% url 'iniciar_sesion' %}">Iniciá sesión</a>  o <a href = "{% url 'registro' %}"> registrate</a>
+</p>
+{% endblock contenido %}
