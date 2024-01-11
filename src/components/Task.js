@@ -36,7 +36,7 @@ function Task({ text, taskCompleted, delTask, editTask }) {
         .catch((error) => console.error(error));
     } else {
       // Si el token JWT no está presente en localStorage, redirige al usuario a la página de inicio de sesión
-      router.push('/iniciar_sesion'); 
+      router.push('/app-tareas/iniciar_sesion'); 
     }
   }, []);
 
@@ -61,7 +61,7 @@ function Task({ text, taskCompleted, delTask, editTask }) {
         })
         .catch((error) => console.error(error));
     } else {
-      router.push('/iniciar_sesion');
+      router.push('/app-tareas/iniciar_sesion');
     }
   };
   
@@ -87,7 +87,7 @@ function Task({ text, taskCompleted, delTask, editTask }) {
         })
         .catch((error) => console.error(error));
     } else {
-      router.push('/iniciar_sesion');
+      router.push('/app-tareas/iniciar_sesion');
     }
   };
   

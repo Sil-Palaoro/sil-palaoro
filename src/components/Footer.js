@@ -18,7 +18,7 @@ function Footer() {
       {isClientFooter == true ?
         <div>
           <div>
-          {pathname !== '/' ? (<Atras className={styles.botonatras} />) : null}
+          <Atras className={styles.botonatras} />
           </div>
           <h3 style={{   
           fontFamily: 'Raleway',     

@@ -30,7 +30,7 @@ function Inicio_sesion() {
         localStorage.setItem('access_token', access_token);        
 
         // Redirige al usuario a la página de tareas
-      window.location.href = "/tareas/";
+      window.location.href = "/app-tareas/tareas/";
 
       //Si la solicitud no fue exitosa da un mensaje de error
       } else {

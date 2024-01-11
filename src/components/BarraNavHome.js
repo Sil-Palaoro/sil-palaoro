@@ -2,7 +2,7 @@
 "use client"
 import Link from 'next/link';
 import "../styles/navbar.css";
-import "../styles/css-home/app-fernando.css"
+import "../styles/css-home/HomePpal.module.css"
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 
@@ -21,7 +21,7 @@ function BarraNav () {
     {isClient == true ?
     <nav className="navigation">
       <Link href="/" className="brand-name">
-        SGP Tareas
+        Silvina Palaoro
       </Link>
       <button className="hamburger">
         {/* icon from heroicons.com */}

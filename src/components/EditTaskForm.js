@@ -35,7 +35,7 @@ function EditTaskForm({editTask, text}) {
         .catch((error) => console.error(error));        
 
     } else {
-      router.push('/iniciar_sesion');
+      router.push('/app-tareas/iniciar_sesion');
     }
     }, []);  
 
@@ -67,7 +67,7 @@ function EditTaskForm({editTask, text}) {
           })
           .catch((error) => console.error(error));
       } else {
-        router.push('/iniciar_sesion');
+        router.push('/app-tareas/iniciar_sesion');
       }
     };
     
