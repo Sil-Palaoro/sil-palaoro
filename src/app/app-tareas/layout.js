@@ -22,7 +22,7 @@ export default function LayoutTareas({ children }) {
       </head>
       <BarraNavAppTareas />
       <body>{children}</body>
-      <Footer />
+      
     </html>
   );
 }

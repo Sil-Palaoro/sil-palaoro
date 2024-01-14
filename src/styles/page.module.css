@@ -61,7 +61,7 @@
 
 /*Boton "Volver atras" del Footer*/
 .botonatras {
-  background-color: #007bff;
+  background-color: #a200ff;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -71,7 +71,7 @@
 }
 
 .botonatras:hover {
-  background-color: #7cb4f0;
+  background-color: #bf59fa;
 }
 
 /*Contenedor Texto de bienvenida a la App en el Home*/

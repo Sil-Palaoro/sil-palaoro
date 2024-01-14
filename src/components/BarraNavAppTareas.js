@@ -43,7 +43,7 @@ function BarraNavAppTareas () {
         className="navigation-menu">
         <ul>
           <li>
-          {pathname !== '/app-tareas' ? (<Link href="/">Home</Link>) : null}
+          {pathname !== '/app-tareas' ? (<Link href="/app-tareas">Home</Link>) : null}
           </li>          
           <li>
           {pathname !== '/app-tareas/iniciar_sesion' && pathname !== '/app-tareas/tareas'  ? (<Link href="/app-tareas/iniciar_sesion">Iniciar sesión</Link>) : null}
