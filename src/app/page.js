@@ -51,7 +51,7 @@ export default function Home() {
                 <div className={styles.grid}>
                     <article className={styles.article}>
                         
-                        <Link href="/app-tareas" title="Aplicación fullstack de Tareas - con NextJS y Django">
+                        <Link href="/app-tareas" title="Aplicación fullstack de Tareas - con NextJS y Django" target="_blank">
                           <Image 
                                 src="/home-app-tareas.jpg"
                                 fill={true}
@@ -65,7 +65,7 @@ export default function Home() {
 
                     </article>
                     <article className={styles.article}>
-                        <a href="#" title="Simulador web películas y series - Kotlin">                        
+                        <a href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/sim-movies" title="Simulador web películas y series - Kotlin" target="_blank">                        
                           <Image 
                                   src="/simulador-movies-kotlin.jpg"
                                   fill={true}
@@ -78,57 +78,57 @@ export default function Home() {
 
                     </article>
                     <article className={styles.article}>
-                        <a href="#" title="Proyecto2">                        
+                        <a href="#" title="Turnero de Farmacia - Python">                        
                           <Image 
-                                  src="/code2.jpeg"
+                                  src="/code1.jpeg"
                                   fill={true}
-                                  alt="Proyecto 2"
+                                  alt="Turnero de Farmacia - Python"
                                   className={styles.img} 
                                   loading="lazy"
                           />                        
-                          <h4 className={styles.h4}>Nombre proyecto2</h4>
+                          <h4 className={styles.h4}>Turnero de Farmacia - Python</h4>
                         </a>
 
                     </article>
 
                     <article className={styles.article}>
-                        <a href="#" title="Proyecto3">                        
+                        <a href="#" title="Ahorcado y Adivina el número - Python">                        
                           <Image 
-                                  src="/code2.jpeg"
+                                  src="/code1.jpeg"
                                   fill={true}
-                                  alt="Proyecto 2"
+                                  alt="Ahorcado y Adivina el número - Python"
                                   className={styles.img} 
                                   loading="lazy"
                           />                        
-                          <h4 className={styles.h4}>Nombre proyecto2</h4>
+                          <h4 className={styles.h4}>Ahorcado y Adivina el número - Python</h4>
                         </a>
 
                     </article>
 
                     <article className={styles.article}>
-                        <a href="#" title="Proyecto4">                        
+                        <a href="#" title="Catalogo celulares - HTML5, Javascript y CSS">                        
                           <Image 
-                                  src="/code2.jpeg"
+                                  src="/code1.jpeg"
                                   fill={true}
-                                  alt="Proyecto 2"
+                                  alt="Catalogo celulares - HTML5, Javascript y CSS"
                                   className={styles.img} 
                                   loading="lazy"
                           />                        
-                          <h4 className={styles.h4}>Nombre proyecto2</h4>
+                          <h4 className={styles.h4}>Catalogo celulares - HTML5, Javascript y CSS</h4>
                         </a>
 
                     </article>
 
                     <article className={styles.article}>
-                        <a href="#" title="Proyecto5">                        
+                        <a href="#" title="Formulario y Calculadora - HTML5, Javascript y CSS">                        
                           <Image 
-                                  src="/code2.jpeg"
+                                  src="/code1.jpeg"
                                   fill={true}
-                                  alt="Proyecto 2"
+                                  alt="Formulario y Calculadora - HTML5, Javascript y CSS"
                                   className={styles.img} 
                                   loading="lazy"
                           />                        
-                          <h4 className={styles.h4}>Nombre proyecto2</h4>
+                          <h4 className={styles.h4}>Formulario y Calculadora - HTML5, Javascript y CSS</h4>
                         </a>
 
                     </article>
