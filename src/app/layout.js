@@ -3,6 +3,7 @@ Barra de Navegación y Footer */
 
 
 import Footer from "@/components/Footer";
+import BarraNavHome from "@/components/BarraNavHome";
 
 
 export const metadata = {
@@ -24,7 +25,7 @@ export default function LayoutHome({ children }) {
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" media="all"/>
 
       </head>
-      
+      <BarraNavHome />
       <body>{children}</body>
       <Footer />
     </html>

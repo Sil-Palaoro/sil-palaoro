@@ -10,25 +10,26 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <body classname="body">    
-        <header className={styles.header}>
+        {/*<header className={styles.header}>
             <h1 className={styles.h1}><a href="#home" title="Silvina Palaoro" className={styles.a}>Silvina Palaoro</a></h1>
             <nav className="nav">
                 <ul className="ul">
                     <li className={styles.li}>
                     <Link title="Home" className={styles.a} href="#home">Home</Link>
-                    {/* <a href="#home" title="Home" className={styles.a}>Home</a> */}
+                    {/* <a href="#home" title="Home" className={styles.a}>Home</a> 
                     </li>
                     <li className={styles.li}>
                     <Link href="#projects" title="Projects" className={styles.a}>Projects</Link>
-                      {/* <a href="#projects" title="Projects" className={styles.a}>Projects</a> */}
+                      {/* <a href="#projects" title="Projects" className={styles.a}>Projects</a> 
                     </li>
                     <li className={styles.li}>
                     <Link href="#about" title="About" className={styles.a}>About</Link>
-                      {/* <a href="#about" title="About" className={styles.a}>About</a> */}
+                      {/* <a href="#about" title="About" className={styles.a}>About</a> 
                     </li>
                 </ul>
             </nav>
         </header>
+        */}
 
         <main className={styles.main}>
             <div className={styles.seccion} id="home">
@@ -44,7 +45,7 @@ export default function Home() {
                 </section>
             </div>
               
-            <section className={styles.seccion} id="projects">
+            <section className={styles.projects} id="projects">
                 <h2 className={styles.h2}>Proyectos</h2>
                 {/* <!-- <p className="p">Aquí están los proyectos realizados mientras estudiaba y otros personales</p> --> */}
               

@@ -23,7 +23,7 @@
     margin-left: 1rem;
   }
 
-  /*Menu denavegación*/
+  /*Menu de navegación*/
   .navigation-menu {
     margin-left: auto;
   }
@@ -43,23 +43,4 @@
     width: 100%;
   }
 
-  /*Menu Hamburguer */
-  .hamburger {    
-    border: 0;
-    height: 40px;
-    width: 40px;
-    padding: 0.5rem;
-    border-radius: 50%;
-    background-color: #283b8b;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;  
-    position: absolute;
-    top: 50%;
-    right: 25px;
-    transform: translateY(-50%);
-    display: none;
-  }
-  .hamburger:hover {
-    background-color: #2642af;
-  }
-
+  

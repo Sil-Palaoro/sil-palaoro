@@ -187,6 +187,7 @@
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+    
   }
   .header .ul{
     margin: 0;
@@ -222,7 +223,7 @@
   }
   .main{
     
-    padding: 0;
+    padding: 5em 0 0 0;
     border: 0;
     box-sizing: border-box;
     /* vertical-align: baseline; */
@@ -243,92 +244,14 @@
     width: 100%;
     min-height: 80vh;
     padding: 2em;
-  
+
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
   }
-  .seccion .info{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-    vertical-align: baseline;
 
-    font-size: 1.2em;
-    animation: aparecer1 2s ease 1 both ;
-    
-  }
-  .seccion .ul{
-    /* background: red; */
-    
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-    /* vertical-align: baseline; */
-
-    margin: 2em 0 0;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  .seccion .ul .li{
-    /* background: chartreuse; */
-    
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-    vertical-align: baseline;
-
-    list-style-type: none;
-
-    margin: 0 1em;
-  }
-  .seccion .ul .a{    
-    margin: 0;    
-    box-sizing: border-box;
-    vertical-align: baseline;
-    
-    display: block;
-    text-decoration: none;
-    color: inherit;
-
-    border:1px solid rgba(255,255,255,.2);
-    border-radius: 50%;
-    padding: 1em 1em 1em;
-    text-transform: uppercase;
-    font-weight: 600;
-    transition: all .5s ease;
-    animation: aparecer1 2s ease 1 backwards;
-  }
-  .seccion .ul>:nth-child(2) .a{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-    vertical-align: baseline;
-
-    display: block;
-    text-decoration: none;
-    color: inherit;
-
-    animation-delay: .2s;
-  }
-  .seccion .ul .a:hover{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-    vertical-align: baseline;
-
-    display: block;
-    text-decoration: none;
-    color: inherit;
-
-    border-color: #e0e0e0;
-  }
+  
   .seccion .h2{
     margin: 0;
     padding: 0;
@@ -351,7 +274,8 @@
       -webkit-background-clip: text;
     color:#fff;
     /* -webkit-text-stroke: 0.018em black; */
-   
+    animation: aparecer1 3s ease 1 both;
+
   }
   .seccion .h3{
     margin: 0;
@@ -366,8 +290,149 @@
 
     font-family: 'Raleway', serif;
     font-size: 4.3em;
+    animation: aparecer1 3s ease 1 both;
   }
-  .seccion .grid{
+
+  .projects{
+    margin: 0;
+    
+    border: 0;
+    box-sizing: border-box;
+    /* vertical-align: baseline; */
+
+    width: 100%;
+    min-height: 80vh;
+    
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 7em 2em;
+      
+  }
+  .projects .info{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+
+    font-size: 1.2em;
+    animation: aparecer1 2s ease 1 both ;
+    
+  }
+  
+  .projects .ul{
+    /* background: red; */
+    
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    /* vertical-align: baseline; */
+
+    margin: 2em 0 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .projects .ul .li{
+    /* background: chartreuse; */
+    
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+
+    list-style-type: none;
+
+    margin: 0 1em;
+  }
+  .projects .ul .a{    
+    margin: 0;    
+    box-sizing: border-box;
+    vertical-align: baseline;
+    
+    display: block;
+    text-decoration: none;
+    color: inherit;
+
+    border:1px solid rgba(255,255,255,.2);
+    border-radius: 50%;
+    padding: 1em 1em 1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all .5s ease;
+    animation: aparecer1 2s ease 1 backwards;
+  }
+  .projects .ul>:nth-child(2) .a{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+
+    display: block;
+    text-decoration: none;
+    color: inherit;
+
+    animation-delay: .2s;
+  }
+  .projects .ul .a:hover{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+
+    display: block;
+    text-decoration: none;
+    color: inherit;
+
+    border-color: #e0e0e0;
+  }
+  .projects .h2{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+
+    color: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+
+    font-family: 'Raleway', serif;
+    font-weight: 700;
+    font-size: 5em;
+    line-height:1em;
+    /* color:#e0e0e0; */
+    /* mix-blend-mode: exclusion; */
+    background-image: linear-gradient(45deg,#8b4394 0%,#d4c6f9 35%,#fdcebb 85%,#ffffff 100%);
+    -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    color:#fff;
+    /* -webkit-text-stroke: 0.018em black; */
+    animation: aparecer1 3s ease 1 both;
+
+  }
+  .projects .h3{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+
+    color: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+
+    font-family: 'Raleway', serif;
+    font-size: 4.3em;
+    animation: aparecer1 3s ease 1 both;
+  }
+  .projects .grid{
     
     padding: 0;
     border: 0;
@@ -382,7 +447,7 @@
     grid-template-columns: repeat( auto-fit , minmax( 15rem , 1fr) );
     gap:1em;
   }
-  .seccion .article{
+  .projects .article{
     margin: 0;
     padding: 0;
     border: 0;
@@ -403,7 +468,7 @@
     border-radius: 1em;
     
   }
-  .seccion .h4{
+  .projects .h4{
     margin: 0;
     padding: 0;
     border: 0;
@@ -435,7 +500,7 @@
     transform:translateZ(1) scale(1.5);
     transition: all .5s ease;
   }
-  .seccion .article:hover .h4{
+  .projects .article:hover .h4{
     margin: 0;
     padding: 0;
     border: 0;
@@ -472,11 +537,13 @@
     color:inherit;
     
   }
+
+  
   .about{
     
     width: 100%;
     min-height: 80vh;
-    padding: 2em;
+    padding: 7em 2em;
   
     display: flex;
     flex-flow: column wrap;
@@ -578,7 +645,14 @@
     position: relative;
     z-index: 2;
   }
-  .footer .span{}
+  
+  .seccion #projects{
+    padding: 7em 2em 2em 2em;
+  }
+
+  .seccion #about{
+    padding: 7em 2em 2em 2em;
+  }  
   
   
   /* @keyframes circulo1{
