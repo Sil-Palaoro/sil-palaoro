@@ -27,6 +27,7 @@
   }
 */
   .img {
+    color: white; 
     max-width: 100%;
     width: 100%;
     display: flex;
@@ -441,7 +442,7 @@
     box-sizing: border-box;
     vertical-align: baseline;
 
-    color: inherit;
+    color: white;
     font-weight: inherit;
     font-size: inherit;
 

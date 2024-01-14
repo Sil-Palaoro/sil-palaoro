@@ -51,17 +51,30 @@ export default function Home() {
                 <div className={styles.grid}>
                     <article className={styles.article}>
                         
-                        <Link href="/app-tareas" title="Aplicación de Tareas">
+                        <Link href="/app-tareas" title="Aplicación fullstack de Tareas - con NextJS y Django">
                           <Image 
                                 src="/home-app-tareas.jpg"
                                 fill={true}
-                                alt="Proyecto 1"
+                                alt="Aplicación fullstack de Tareas - con NextJS y Django"
                                 className={styles.img} 
                                 loading="lazy"
                           />                                                                               
-                          <h4 className={styles.h4}>Aplicación de Tareas</h4>
+                          <h4 className={styles.h4}>Aplicación fullstack de Tareas - con NextJS y Django</h4>
                         </Link>
                         
+
+                    </article>
+                    <article className={styles.article}>
+                        <a href="#" title="Simulador web películas y series - Kotlin">                        
+                          <Image 
+                                  src="/simulador-movies-kotlin.jpg"
+                                  fill={true}
+                                  alt="Simulador web películas y series - Kotlin"
+                                  className={styles.img} 
+                                  loading="lazy"
+                          />                        
+                          <h4 className={styles.h4}>Simulador web películas y series - Kotlin</h4>
+                        </a>
 
                     </article>
                     <article className={styles.article}>
@@ -77,6 +90,50 @@ export default function Home() {
                         </a>
 
                     </article>
+
+                    <article className={styles.article}>
+                        <a href="#" title="Proyecto3">                        
+                          <Image 
+                                  src="/code2.jpeg"
+                                  fill={true}
+                                  alt="Proyecto 2"
+                                  className={styles.img} 
+                                  loading="lazy"
+                          />                        
+                          <h4 className={styles.h4}>Nombre proyecto2</h4>
+                        </a>
+
+                    </article>
+
+                    <article className={styles.article}>
+                        <a href="#" title="Proyecto4">                        
+                          <Image 
+                                  src="/code2.jpeg"
+                                  fill={true}
+                                  alt="Proyecto 2"
+                                  className={styles.img} 
+                                  loading="lazy"
+                          />                        
+                          <h4 className={styles.h4}>Nombre proyecto2</h4>
+                        </a>
+
+                    </article>
+
+                    <article className={styles.article}>
+                        <a href="#" title="Proyecto5">                        
+                          <Image 
+                                  src="/code2.jpeg"
+                                  fill={true}
+                                  alt="Proyecto 2"
+                                  className={styles.img} 
+                                  loading="lazy"
+                          />                        
+                          <h4 className={styles.h4}>Nombre proyecto2</h4>
+                        </a>
+
+                    </article>
+
+                    
                 </div>
             </section>
               
@@ -88,23 +145,23 @@ export default function Home() {
                 </strong>,  lo que me ha 
                     llevado a explorar distintas áreas en mi vida. El campo 
                     de la tecnología siempre me atrajo y creo que tengo 
-                    habilidad para crecer en el ámbito del desarrollo, 
-                    <strong>
+                    habilidad para crecer en el ámbito del desarrollo,  
+                    <strong> 
                         disfrutando de los desafíos que se presentan en cada
                         proyecto
                     </strong>.</p>
-                <p className={styles.p}>No poseo experiencia laboral en IT, pero sí 
+                <p className={styles.p}>No poseo experiencia laboral en IT, ya que estoy haciendo un cambio de carrera, pero sí 
                     tengo mucha experiencia laboral en <strong>
                         trabajo de grupos y
                         comunicación
-                    </strong> en un ambiente virtual, adquirida mediante 
+                    </strong> en un <strong>ambiente virtual</strong> mediante 
                     la co-creación, dirección, administración y docencia de 
                     una escuela <strong>online</strong> de partería 
                     (<a href="http://www.parterasmayeutica.com" 
                     className={styles.sobremi} title="Escuela Mayeutica">
                     www.parterasmayeutica.com</a> 2017 – actualidad). 
                     Una parte de mis tareas aquí también ha sido la 
-                    <strong>orientación y resolución de problemas técnicos</strong>.
+                    <strong> orientación y resolución de problemas técnicos</strong>.
                     </p>
                 <p className={styles.p}>También en mi vida he tenido experiencia en 
                     investigación en ciencias (durante mis 4 años de estudio 
