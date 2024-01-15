@@ -93,9 +93,9 @@ export default function Home() {
                     </article>
 
                     <article className={styles.article}>
-                        <a href="#" title="Ahorcado y Adivina el número - Python">                        
+                        <a href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/ahorcado-adivinador" title="Ahorcado y Adivina el número - Python">                        
                           <Image 
-                                  src="/code1.jpeg"
+                                  src="/adivina-ahorcado.jpg"
                                   fill={true}
                                   alt="Ahorcado y Adivina el número - Python"
                                   className={styles.img} 
