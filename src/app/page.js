@@ -79,9 +79,9 @@ export default function Home() {
 
                     </article>
                     <article className={styles.article}>
-                        <a href="#" title="Turnero de Farmacia - Python">                        
+                        <a href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/turnero-farmacia" title="Turnero de Farmacia - Python" target="_blank">                        
                           <Image 
-                                  src="/code1.jpeg"
+                                  src="/turnero-python.jpg"
                                   fill={true}
                                   alt="Turnero de Farmacia - Python"
                                   className={styles.img} 
