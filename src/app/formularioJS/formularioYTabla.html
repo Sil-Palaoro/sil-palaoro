@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Grupal</title>
+    <link rel='stylesheet' href='EjercicioGrupal1-FormularioYTabla.css'>
+</head>
+<body>
+    <div>
+    <h1>Datos</h1>
+    <hr>
+
+    <form action="EjercicioGrupal.html" method="get" onSubmit="return validarFormulario()"> 
+
+      <p>Nombre 
+        <input type="text" maxlength="20" name="nombre" id="nombre" required>
+    </p> 
+      <p>Apellido
+        <input type="text" maxlength="25" name="apellido" id="apellido" required>
+    </p>
+      <p>Edad
+        <input type="number" name="edad" id="edad" required>
+    </p>
+      <p>DNI
+        <input type="number" name="dni" id="dni" required>
+    </p>
+      <p>Correo electrónico 
+        <input type="text" name="email" id="email" required>
+    </p>
+        
+        <button type="submit" value="Cargar" class="botonagregar">Cargar</button>
+    </form>
+</div>
+
+    <table id="tabla">
+        <caption>Tabla</caption>
+
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+                <th>DNI</th>
+                <th>Correo electrónico</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            
+
+        </tbody>
+
+        <tfoot>
+
+        </tfoot>
+
+
+    </table>
+
+    <br><br>
+
+    <a href="IntegrantesGrupo13.html"> Autores</a>
+
+
+</body>
+<script src="EjercicioGrupal1-FormularioYTabla.js"></script>
+
+</html>

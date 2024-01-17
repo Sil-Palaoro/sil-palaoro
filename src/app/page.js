@@ -10,35 +10,10 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <body classname="body">    
-        {/*<header className={styles.header}>
-            <h1 className={styles.h1}><a href="#home" title="Silvina Palaoro" className={styles.a}>Silvina Palaoro</a></h1>
-            <nav className="nav">
-                <ul className="ul">
-                    <li className={styles.li}>
-                    <Link title="Home" className={styles.a} href="#home">Home</Link>
-                    {/* <a href="#home" title="Home" className={styles.a}>Home</a> 
-                    </li>
-                    <li className={styles.li}>
-                    <Link href="#projects" title="Projects" className={styles.a}>Projects</Link>
-                      {/* <a href="#projects" title="Projects" className={styles.a}>Projects</a> 
-                    </li>
-                    <li className={styles.li}>
-                    <Link href="#about" title="About" className={styles.a}>About</Link>
-                      {/* <a href="#about" title="About" className={styles.a}>About</a> 
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        */}
-
+        
         <main className={styles.main}>
             <div className={styles.seccion} id="home">
-                {/* <!-- <div className="circulos">
-                    <div className="circulo"></div>
-                    <div className="circulo"></div>
-                    <div className="circulo"></div>
-                    <div className="circulo"></div>
-                </div> --> */}
+                
                 <section className={styles.seccion} id="home">
                     <h2 className={styles.h2}>Silvina Palaoro</h2>
                     <h3 className={styles.h3}>Backend Developer</h3>
@@ -93,17 +68,31 @@ export default function Home() {
                     </article>
 
                     <article className={styles.article}>
-                        <a href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/ahorcado-adivinador" title="Ahorcado y Adivina el número - Python">                        
+                        <a href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/ahorcado-adivinador" 
+                        title="Ahorcado - Python">                        
                           <Image 
                                   src="/adivina-ahorcado.jpg"
                                   fill={true}
-                                  alt="Ahorcado y Adivina el número - Python"
+                                  alt="Ahorcado - Python"
                                   className={styles.img} 
                                   loading="lazy"
                           />                        
-                          <h4 className={styles.h4}>Ahorcado y Adivina el número - Python</h4>
-                        </a>
+                          <h4 className={styles.h4}>Ahorcado - Python</h4>
+                        </a>                        
+                    </article>
 
+                    <article className={styles.article}>
+                        <a href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/ahorcado-adivinador" 
+                        title="Adivina el número - Python">                        
+                          <Image 
+                                  src="/adivina-ahorcado.jpg"
+                                  fill={true}
+                                  alt="Adivina el número - Python"
+                                  className={styles.img} 
+                                  loading="lazy"
+                          />                        
+                          <h4 className={styles.h4}>Adivina el número - Python</h4>
+                        </a>                        
                     </article>
 
                     <article className={styles.article}>
@@ -121,19 +110,31 @@ export default function Home() {
                     </article>
 
                     <article className={styles.article}>
-                        <a href="#" title="Formulario y Calculadora - HTML5, Javascript y CSS">                        
+                        <a href="/formularioJS" title="Formulario y tabla - HTML5, Javascript y CSS">                        
                           <Image 
                                   src="/code1.jpeg"
                                   fill={true}
-                                  alt="Formulario y Calculadora - HTML5, Javascript y CSS"
+                                  alt="Formulario y tabla- HTML5, Javascript y CSS"
                                   className={styles.img} 
                                   loading="lazy"
                           />                        
-                          <h4 className={styles.h4}>Formulario y Calculadora - HTML5, Javascript y CSS</h4>
+                          <h4 className={styles.h4}>Formulario y tabla - HTML5, Javascript y CSS</h4>
                         </a>
 
                     </article>
+                    <article className={styles.article}>
+                        <Link href="/calculadora-js" title="Calculadora - HTML5, Javascript y CSS" target="_blank">                        
+                          <Image 
+                                  src="/code1.jpeg"
+                                  fill={true}
+                                  alt="Calculadora - HTML5, Javascript y CSS"
+                                  className={styles.img} 
+                                  loading="lazy"
+                          />                        
+                          <h4 className={styles.h4}>Calculadora - HTML5, Javascript y CSS</h4>
+                        </Link>
 
+                    </article>
                     
                 </div>
             </section>
@@ -204,4 +205,32 @@ export default function Home() {
   );
 }
 
+
+{/*<header className={styles.header}>
+            <h1 className={styles.h1}><a href="#home" title="Silvina Palaoro" className={styles.a}>Silvina Palaoro</a></h1>
+            <nav className="nav">
+                <ul className="ul">
+                    <li className={styles.li}>
+                    <Link title="Home" className={styles.a} href="#home">Home</Link>
+                    {/* <a href="#home" title="Home" className={styles.a}>Home</a> 
+                    </li>
+                    <li className={styles.li}>
+                    <Link href="#projects" title="Projects" className={styles.a}>Projects</Link>
+                      {/* <a href="#projects" title="Projects" className={styles.a}>Projects</a> 
+                    </li>
+                    <li className={styles.li}>
+                    <Link href="#about" title="About" className={styles.a}>About</Link>
+                      {/* <a href="#about" title="About" className={styles.a}>About</a> 
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        */}
+
+        {/* <!-- <div className="circulos">
+                    <div className="circulo"></div>
+                    <div className="circulo"></div>
+                    <div className="circulo"></div>
+                    <div className="circulo"></div>
+                </div> --> */}
 

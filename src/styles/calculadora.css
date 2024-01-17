@@ -1,0 +1,56 @@
+
+body{
+    background: linear-gradient(90deg, #e66465, white)
+}
+
+h1 {
+    position: relative;
+    bottom: 1em;
+    text-align: center;
+}
+
+p {
+text-align: bottom;
+}
+
+.calculadora {
+    background: linear-gradient(to top, rgb(42, 158, 196), violet);
+    border-radius: 1.5em;
+    border: 1px solid;
+    padding: 2em;
+    margin: 0 auto;
+    width: 15em;
+    text-align: center;
+    position: relative;
+    top: 10em;
+}
+
+input{
+    background-color: rgb(255, 255, 255);
+}
+.numero1, .numero2{
+font-size: larger;
+position: relative;
+bottom: 1.5em;
+}
+button{
+background-color: rgb(233, 218, 218);
+transition: 0.5s;
+cursor: pointer;
+}
+button:hover{
+background-color: aqua;
+}
+.boton{
+    position: relative;
+    bottom: 1em;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ff0202;
+    font-size: large;
+    -webkit-text-stroke: 1.1px rgba(255, 253, 253, 0.288);
+    font-weight: bold;
+    margin-bottom: auto;
+}

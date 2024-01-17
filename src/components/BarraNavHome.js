@@ -29,7 +29,7 @@ function BarraNavHome () {
       <nav className={styles.nav}>
         <ul className={styles.ul}>
           <li className={styles.li}>
-          <Link title="Home" className={styles.a} href="#home">Home</Link>
+          <Link title="Home" className={styles.a} href="/">Home</Link>
           </li>          
           <li className={styles.li}>
           <Link href="#projects" title="Projects" className={styles.a}>Projects</Link>
