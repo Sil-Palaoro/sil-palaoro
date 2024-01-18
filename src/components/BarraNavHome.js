@@ -17,7 +17,7 @@ function BarraNavHome () {
  
   return (
     <>
-    {isClient == true ?
+    {isClient === true && pathname === '/' ?
     <header className={styles.header}>
       <h1 className={styles.h1}>
       <Link href="/" title="Silvina Palaoro" className={styles.a}>

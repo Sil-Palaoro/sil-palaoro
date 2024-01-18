@@ -6,15 +6,13 @@ import styles from "../../styles/page.module.css";
 
 export default function HomeTareas() {
   return (
-    <body className={styles.main}>
-    <main>
+    <div className={styles.main}>    
       <div className={styles.center}>        
         <h1>Bienvenidos/as a SGP Tareas!</h1>          
         <br/>             
         <h2>Agregá, editá y marcá como hechas todas tus tareas</h2>
       </div> 
-    </main>
-    </body>
+    </div>
   );
 }
 
