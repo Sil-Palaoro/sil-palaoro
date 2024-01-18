@@ -142,37 +142,24 @@
    
 
   .header{
-    margin: 0;
-    
-    border: 0;
-    /* box-sizing: border-box; */
-    /* vertical-align: baseline; */
-
+    margin: 0;    
+    border: 0;    
     width: 100%;
     min-height: 5em;  
-    /* color: white; */
     font-weight: 800;
     color:#fff;
     background-image: linear-gradient(to right,#8b4394 ,#fdcebb ,#8b4394 );
     -webkit-text-fill-color: transparent;
       background-clip: text;
-    color:#fff;
-    /* -webkit-text-stroke: 0.018em black;
-     */       
-  
+    color:#fff;    
     padding: 1em 2em;
   
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-
-    font-family: 'Raleway', serif;
-
-    
+    font-family: 'Raleway', serif;    
     height: 60px;
-    width: 100%;
-    
     position: fixed;
     padding: 0 0 0 1em;
     
