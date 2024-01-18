@@ -112,7 +112,7 @@ export default function Home() {
                     </article>
 
                     <article className={styles.article}>
-                        <Link href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/formularioJS" title="Formulario y tabla - HTML5, Javascript y CSS">                        
+                        <Link href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/formularioJS" title="Formulario y tabla - HTML5, Javascript y CSS" target="_blank">                        
                           <Image 
                                   src="/formulario.jpg"
                                   fill={true}
