@@ -9,7 +9,7 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <body classname="body">    
+    <body className="body">    
         
         <main className={styles.main}>
             <div className={styles.seccion} id="home">
@@ -27,7 +27,7 @@ export default function Home() {
                 <div className={styles.grid}>
                     <article className={styles.article}>
                         
-                        <Link href="/app-tareas" title="Aplicación fullstack de Tareas - con NextJS y Django" target="_blank">
+                        <Link href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/app-tareas" title="Aplicación fullstack de Tareas - con NextJS y Django" target="_blank">
                           <Image 
                                 src="/home-app-tareas.jpg"
                                 fill={true}
@@ -40,6 +40,7 @@ export default function Home() {
                         
 
                     </article>
+
                     <article className={styles.article}>
                         <a href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/sim-movies" title="Simulador web películas y series - Kotlin" target="_blank">                        
                           <Image 
@@ -53,6 +54,7 @@ export default function Home() {
                         </a>
 
                     </article>
+
                     <article className={styles.article}>
                         <a href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/turnero-farmacia" title="Turnero de Farmacia - Python" target="_blank">                        
                           <Image 
@@ -68,7 +70,7 @@ export default function Home() {
                     </article>
 
                     <article className={styles.article}>
-                        <a href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/ahorcado-adivinador" 
+                        <a href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/ahorcado" 
                         title="Ahorcado - Python">                        
                           <Image 
                                   src="/adivina-ahorcado.jpg"
@@ -82,7 +84,7 @@ export default function Home() {
                     </article>
 
                     <article className={styles.article}>
-                        <a href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/ahorcado-adivinador" 
+                        <a href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/adivinador" 
                         title="Adivina el número - Python">                        
                           <Image 
                                   src="/adivina-ahorcado.jpg"
@@ -122,6 +124,7 @@ export default function Home() {
                         </a>
 
                     </article>
+
                     <article className={styles.article}>
                         <Link href="/calculadora-js" title="Calculadora - HTML5, Javascript y CSS" target="_blank">                        
                           <Image 
