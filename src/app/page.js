@@ -22,9 +22,9 @@ export default function Home() {
               
             <section className={styles.projects} id="projects">
                 <h2 className={styles.h2}>Proyectos</h2>
-                {/* <!-- <p className="p">Aquí están los proyectos realizados mientras estudiaba y otros personales</p> --> */}
               
                 <div className={styles.grid}>
+
                     <article className={styles.article}>
                         
                         <Link href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/app-tareas" title="Aplicación fullstack de Tareas - con NextJS y Django" target="_blank">
@@ -98,7 +98,7 @@ export default function Home() {
                     </article>
 
                     <article className={styles.article}>
-                        <a href="#" title="Catalogo celulares - HTML5, Javascript y CSS">                        
+                        <a href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/catalogo" title="Catalogo celulares - HTML5, Javascript y CSS">                        
                           <Image 
                                   src="/code1.jpeg"
                                   fill={true}
@@ -145,17 +145,27 @@ export default function Home() {
             <section className={styles.about} id="about">
                 <h2 className={styles.h2}>Sobre mi</h2>
                 <p className={styles.p}>Soy una persona con capacidad de <strong>
-                    investigación
-                        autónoma, dedicada y rápida para aprender
+                    investigación autónoma, dedicada y rápida para aprender
                 </strong>,  lo que me ha 
-                    llevado a explorar distintas áreas en mi vida. El campo 
-                    de la tecnología siempre me atrajo y creo que tengo 
+                    llevado a explorar distintas áreas en mi vida. Soy curiosa 
+                    y me gusta investigar y entender con profundidad cada nuevo 
+                    tema que me encuentro.
+                </p>
+                <p className={styles.p}>    
+                    En el desarrollo de aplicaciones me gusta crear código que sea 
+                    claro, eficiente y reutilizable, intentando usar buenas prácticas, 
+                    como el uso de comentarios que faciliten el uso a otros 
+                    programadores, y trabajar con mis compañeros para buscar las mejores 
+                    soluciones consultando diversas fuentes.
+                    El campo de la tecnología siempre me atrajo y creo que tengo 
                     habilidad para crecer en el ámbito del desarrollo,  
                     <strong> 
                         disfrutando de los desafíos que se presentan en cada
                         proyecto
                     </strong>.</p>
-                <p className={styles.p}>No poseo experiencia laboral en IT, ya que estoy haciendo un cambio de carrera, pero sí 
+                <p className={styles.p}>
+                    No poseo experiencia laboral en IT, ya que 
+                    estoy haciendo un cambio de carrera, pero sí 
                     tengo mucha experiencia laboral en <strong>
                         trabajo de grupos y
                         comunicación
