@@ -152,11 +152,16 @@ export default function Home() {
                     tema que me encuentro.
                 </p>
                 <p className={styles.p}>    
-                    En el desarrollo de aplicaciones me gusta crear código que sea 
-                    claro, eficiente y reutilizable, intentando usar buenas prácticas, 
+                    En el desarrollo de aplicaciones me gusta crear <strong>
+                        código que sea
+                        claro, eficiente y reutilizable
+                    </strong>, intentando usar buenas prácticas, 
                     como el uso de comentarios que faciliten el uso a otros 
                     programadores, y trabajar con mis compañeros para buscar las mejores 
                     soluciones consultando diversas fuentes.
+                </p>
+                <p className={styles.p}>    
+
                     El campo de la tecnología siempre me atrajo y creo que tengo 
                     habilidad para crecer en el ámbito del desarrollo,  
                     <strong> 
