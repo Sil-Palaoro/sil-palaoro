@@ -73,7 +73,7 @@ export default function Home() {
                         <a href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/ahorcado" 
                         title="Ahorcado - Python">                        
                           <Image 
-                                  src="/adivina-ahorcado.jpg"
+                                  src="/ahorcado.jpg"
                                   fill={true}
                                   alt="Ahorcado - Python"
                                   className={styles.img} 
@@ -87,7 +87,7 @@ export default function Home() {
                         <a href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/adivinador" 
                         title="Adivina el número - Python">                        
                           <Image 
-                                  src="/adivina-ahorcado.jpg"
+                                  src="/adivina-numero.jpg"
                                   fill={true}
                                   alt="Adivina el número - Python"
                                   className={styles.img} 
@@ -100,7 +100,7 @@ export default function Home() {
                     <article className={styles.article}>
                         <a href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/catalogo" title="Catalogo celulares - HTML5, Javascript y CSS">                        
                           <Image 
-                                  src="/code1.jpeg"
+                                  src="/catalogo.jpg"
                                   fill={true}
                                   alt="Catalogo celulares - HTML5, Javascript y CSS"
                                   className={styles.img} 
@@ -141,6 +141,24 @@ export default function Home() {
                     
                 </div>
             </section>
+            <section className={styles.languajes} id="languajes">
+                <h2 className={styles.h2}>Lenguajes, tecnologías y librerías</h2>
+                <p className={styles.p}><strong>
+                    Backend</strong> 
+                </p> 
+                <p className={styles.p}>
+                    Kotlin - Python - Django REST Framework - Node.js - SQL
+                </p> 
+                <p className={styles.p}><strong>                    
+                    Front End                                      
+                </strong> 
+                </p> 
+                <p className={styles.p}>
+                    Next.js - React.js - JavaScript - HTML5 - CSS                 
+                </p>                   
+            </section>
+
+
               
             <section className={styles.about} id="about">
                 <h2 className={styles.h2}>Sobre mi</h2>
@@ -163,7 +181,7 @@ export default function Home() {
                 <p className={styles.p}>    
 
                     El campo de la tecnología siempre me atrajo y creo que tengo 
-                    habilidad para crecer en el ámbito del desarrollo,  
+                    habilidad para crecer en el ámbito del desarrollo,   
                     <strong> 
                         disfrutando de los desafíos que se presentan en cada
                         proyecto

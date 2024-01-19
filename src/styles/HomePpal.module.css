@@ -525,6 +525,56 @@
     
   }
 
+  .languajes{
+    
+    width: 100%;
+    min-height: 80vh;
+    padding: 0;
+  
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .languajes .h2{
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+
+    color: inherit;
+    font-weight: inherit;
+    
+
+    margin: 0 0 2rem;
+
+    font-family: 'Raleway', serif;
+    font-weight: 700;
+    font-size: 3em;
+    line-height:1em;
+   
+    background-image: linear-gradient(45deg,#8b4394 0%,#d4c6f9 35%,#fdcebb 85%,#ffffff 100%);
+    -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    color:#fff;
+  }
+  .languajes .p{
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    /* vertical-align: baseline; */
+
+    max-width: 40rem;
+    margin: 0 0 2rem;
+    font-size: 1.1em ;
+    text-align: left;
+
+    color: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+
+    font-family: 'Raleway', serif;
+  }
   
   .about{
     
