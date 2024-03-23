@@ -162,18 +162,20 @@ export default function Home() {
               
             <section className={styles.about} id="about">
                 <h2 className={styles.h2}>Sobre mi</h2>
-                <p className={styles.p}>Soy una persona con capacidad de <strong>
-                    investigación autónoma, dedicada y rápida para aprender
-                </strong>,  lo que me ha 
-                    llevado a explorar distintas áreas en mi vida. Soy curiosa 
+                <p className={styles.p}>Soy <strong>
+                   dedicada y rápida para aprender
+                </strong> con gran <strong> capacidad de 
+                    investigación autónoma</strong>. Soy curiosa 
                     y me gusta investigar y entender con profundidad cada nuevo 
-                    tema que me encuentro.
+                    tema que me encuentro, lo que me ha 
+                    llevado a explorar distintas áreas en mi vida.
                 </p>
                 <p className={styles.p}>    
                     En el desarrollo de aplicaciones me gusta crear <strong>
                         código que sea
                         claro, eficiente y reutilizable
-                    </strong>, intentando usar buenas prácticas, 
+                    </strong>, para optimizar tiempos y minimizar errores, 
+                    intentando usar buenas prácticas, 
                     como el uso de comentarios que faciliten el uso a otros 
                     programadores, y trabajar con mis compañeros para buscar las mejores 
                     soluciones consultando diversas fuentes.
@@ -187,11 +189,9 @@ export default function Home() {
                         proyecto
                     </strong>.</p>
                 <p className={styles.p}>
-                    No poseo experiencia laboral en IT, ya que 
-                    estoy haciendo un cambio de carrera, pero sí 
-                    tengo mucha experiencia laboral en <strong>
-                        trabajo de grupos y
-                        comunicación
+                    Si bien como estoy haciendo un cambio de carrera vengo de otra 
+                    rama de trabajo, tengo mucha experiencia laboral en <strong>
+                        trabajo de grupos y comunicación
                     </strong> en un <strong>ambiente virtual</strong> mediante 
                     la co-creación, dirección, administración y docencia de 
                     una escuela <strong>online</strong> de partería 
@@ -201,19 +201,20 @@ export default function Home() {
                     Una parte de mis tareas aquí también ha sido la 
                     <strong> orientación y resolución de problemas técnicos</strong>.
                     </p>
-                <p className={styles.p}>También en mi vida he tenido experiencia en 
+                <p className={styles.p}>Durante mí recorrido laboral, también
+                    he tenido experiencia en 
                     investigación en ciencias (durante mis 4 años de estudio 
                     en licenciatura en Química (UBA. Promedio: 8.94) y 
                     trabajo de docencia e investigación en el área. 2001 – 
                     2006), lo que me ha proporcionado las herramientas para 
                     el <strong>pensamiento lógico y resolución de problemas</strong>.
                     </p>
-                <p className={styles.p}>Además, mis 12 años como partera autónoma 
+                <p className={styles.p}>Sumado a esto, mis 12 años como partera autónoma 
                     (2011 -2023), de <strong>formación autodidacta</strong>, me ha dado un 
                     amor por el crecimiento propio y la búsqueda independiente 
                     de información, a su vez que aprendí que <strong>
                         trabajar en
-                        equipo y pedir ayuda cuando es necesario
+                        equipo y pedir ayuda oportunamente
                     </strong> es fundamental 
                     para mantener una mente abierta a nuevas y mejores 
                     soluciones. 
