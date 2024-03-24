@@ -141,7 +141,7 @@ export default function Home() {
                     
                 </div>
             </section>
-            <section className={styles.languajes} id="languajes">
+            <section className={styles.languajes} id="skills">
                 <h2 className={styles.h2}>Lenguajes, tecnologías y librerías</h2>
                 <p className={styles.p}><strong>
                     Backend</strong> 

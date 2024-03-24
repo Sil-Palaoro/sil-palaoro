@@ -35,6 +35,9 @@ function BarraNavHome () {
           <Link href="#projects" title="Projects" className={styles.a}>Projects</Link>
           </li>
           <li className={styles.li}>
+          <Link href="#skills" title="Skills" className={styles.a}>Skills</Link>
+          </li>
+          <li className={styles.li}>
           <Link href="#about" title="About" className={styles.a}>About</Link>
           </li>          
          </ul>
