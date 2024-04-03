@@ -16,7 +16,7 @@ export default function Home() {
                 
                 <section className={styles.seccion} id="home">
                     <h2 className={styles.h2}>Silvina Palaoro</h2>
-                    <h3 className={styles.h3}>Backend Developer</h3>
+                    <h3 className={styles.h3}>Full Stack/Backend Developer</h3>
                 </section>
             </div>
               
