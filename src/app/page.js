@@ -162,15 +162,27 @@ export default function Home() {
               
             <section className={styles.about} id="about">
                 <h2 className={styles.h2}>Sobre mi</h2>
-                <p className={styles.p}>Soy <strong>
+                
+                  <p className={styles.p}>Soy idealista y curiosa. Quiero hacer del mundo un lugar mejor a través de aplicaciones 
+                                    prácticas que faciliten y mejoren la calidad de vida, la gestión del tiempo y aporten soluciones 
+                                      a problemas cotidianos.
+                  </p>
+                                        
+                  <p className={styles.p}>Me gusta trabajar con claridad y honestidad como pilar fundamental, siempre tratando de mantener una actitud 
+                                        positiva y pensar en soluciones, en lugar de problemas. Me gusta hacer muchas preguntas 
+                                          y estoy abierta a críticas constructivas para evolucionar y crecer. 
+                   </p>                
+                                    
+                   <p className={styles.p}>Soy <strong>
                    dedicada y rápida para aprender
-                </strong> con gran <strong> capacidad de 
+                    </strong> con gran <strong> capacidad de 
                     investigación autónoma</strong>. Soy curiosa 
                     y me gusta investigar y entender con profundidad cada nuevo 
                     tema que me encuentro, lo que me ha 
                     llevado a explorar distintas áreas en mi vida.
-                </p>
-                <p className={styles.p}>    
+                   </p>
+                   
+                    <p className={styles.p}>    
                     En el desarrollo de aplicaciones me gusta crear <strong>
                         código que sea
                         claro, eficiente y reutilizable
@@ -180,6 +192,7 @@ export default function Home() {
                     programadores, y trabajar con mis compañeros para buscar las mejores 
                     soluciones consultando diversas fuentes.
                 </p>
+                      
                 <p className={styles.p}>    
 
                     El campo de la tecnología siempre me atrajo y creo que tengo 
@@ -187,8 +200,10 @@ export default function Home() {
                     <strong> 
                          disfrutando de los desafíos que se presentan en cada
                         proyecto
-                    </strong>.</p>
-                <p className={styles.p}>
+                    </strong>.
+                  </p>
+                
+                  <p className={styles.p}>
                     Si bien como estoy haciendo un cambio de carrera vengo de otra 
                     rama de trabajo, tengo mucha experiencia laboral en <strong>
                         trabajo de grupos y comunicación
@@ -201,7 +216,8 @@ export default function Home() {
                     Una parte de mis tareas aquí también ha sido la 
                     <strong> orientación y resolución de problemas técnicos</strong>.
                     </p>
-                <p className={styles.p}>Durante mí recorrido laboral, también
+                
+                    <p className={styles.p}>Durante mí recorrido laboral, también
                     he tenido experiencia en 
                     investigación en ciencias (durante mis 4 años de estudio 
                     en licenciatura en Química (UBA. Promedio: 8.94) y 
@@ -209,7 +225,8 @@ export default function Home() {
                     2006), lo que me ha proporcionado las herramientas para 
                     el <strong>pensamiento lógico y resolución de problemas</strong>.
                     </p>
-                <p className={styles.p}>Sumado a esto, mis 12 años como partera autónoma 
+                
+                    <p className={styles.p}>Sumado a esto, mis 12 años como partera autónoma 
                     (2011 -2023), de <strong>formación autodidacta</strong>, me ha dado un 
                     amor por el crecimiento propio y la búsqueda independiente 
                     de información, a su vez que aprendí que <strong>
@@ -245,33 +262,4 @@ export default function Home() {
     </body>
   );
 }
-
-
-{/*<header className={styles.header}>
-            <h1 className={styles.h1}><a href="#home" title="Silvina Palaoro" className={styles.a}>Silvina Palaoro</a></h1>
-            <nav className="nav">
-                <ul className="ul">
-                    <li className={styles.li}>
-                    <Link title="Home" className={styles.a} href="#home">Home</Link>
-                    {/* <a href="#home" title="Home" className={styles.a}>Home</a> 
-                    </li>
-                    <li className={styles.li}>
-                    <Link href="#projects" title="Projects" className={styles.a}>Projects</Link>
-                      {/* <a href="#projects" title="Projects" className={styles.a}>Projects</a> 
-                    </li>
-                    <li className={styles.li}>
-                    <Link href="#about" title="About" className={styles.a}>About</Link>
-                      {/* <a href="#about" title="About" className={styles.a}>About</a> 
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        */}
-
-        {/* <!-- <div className="circulos">
-                    <div className="circulo"></div>
-                    <div className="circulo"></div>
-                    <div className="circulo"></div>
-                    <div className="circulo"></div>
-                </div> --> */}
 
