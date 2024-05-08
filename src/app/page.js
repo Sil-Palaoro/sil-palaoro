@@ -147,7 +147,7 @@ export default function Home() {
                     Backend</strong> 
                 </p> 
                 <p className={styles.p}>
-                    Kotlin - Python - Django REST Framework - Node.js - SQL
+                    Python - Django REST Framework - Kotlin - Node.js - SQL (SQLite y PostgreSQL)
                 </p> 
                 <p className={styles.p}><strong>                    
                     Front End                                      
@@ -155,7 +155,23 @@ export default function Home() {
                 </p> 
                 <p className={styles.p}>
                     Next.js - React.js - JavaScript - HTML5 - CSS                 
-                </p>                   
+                </p>       
+
+                <p className={styles.p}><strong>                    
+                    Otros..                                      
+                </strong> 
+                </p> 
+                <p className={styles.p}>
+                    Git (GitHub y GitLab) - Trello                  
+                </p>  
+                
+                <p className={styles.p}><strong>                    
+                  Idiomas                                     
+                </strong> 
+                </p> 
+                <p className={styles.p}>
+                    Español (nativo) - Inglés (Intermedio-alto) - Portugués (básico)                  
+                </p>  
             </section>
 
 
