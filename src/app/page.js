@@ -16,7 +16,7 @@ export default function Home() {
                 
                 <section className={styles.seccion} id="home">
                     <h2 className={styles.h2}>Silvina Palaoro</h2>
-                    <h3 className={styles.h3}>Full Stack/Backend Developer</h3>
+                    <h3 className={styles.h3}>Backend/Full Stack Developer</h3>
                 </section>
             </div>
               
@@ -179,13 +179,13 @@ export default function Home() {
             <section className={styles.about} id="about">
                 <h2 className={styles.h2}>Sobre mi</h2>
                 
-                  <p className={styles.p}>Soy idealista y curiosa. Quiero hacer del mundo un lugar mejor a través de aplicaciones 
+                  <p className={styles.p}>Soy <strong>idealista y curiosa</strong>. Quiero hacer del mundo un lugar mejor a través de aplicaciones 
                                     prácticas que faciliten y mejoren la calidad de vida, la gestión del tiempo y aporten soluciones 
                                       a problemas cotidianos.
                   </p>
                                         
-                  <p className={styles.p}>Me gusta trabajar con claridad y honestidad como pilar fundamental, siempre tratando de mantener una actitud 
-                                        positiva y pensar en soluciones, en lugar de problemas. Me gusta hacer muchas preguntas 
+                  <p className={styles.p}>Me gusta trabajar con <strong>claridad y honestidad</strong> como pilar fundamental, siempre tratando de mantener una actitud 
+                                        positiva y pensar en <strong>soluciones</strong>, en lugar de problemas. Me gusta hacer muchas preguntas 
                                           y estoy abierta a críticas constructivas para evolucionar y crecer. 
                    </p>                
                                     
