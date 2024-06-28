@@ -1,4 +1,4 @@
-/*Trabajo Final - Argentina Programa 4.0 - Grupo Code Hunters*/
+/*Homepage Portfolio - Silvina Palaoro*/
 
 "use client"
 import styles from '../styles/HomePpal.module.css';
@@ -24,6 +24,23 @@ export default function Home() {
                 <h2 className={styles.h2}>Proyectos</h2>
               
                 <div className={styles.grid}>
+
+                <article className={styles.article}>
+                        
+                        <Link href="https://pareaqui.vercel.app/" 
+                        title="Aplicación fullstack de Alquiler de espacios de Estacionamiento - con React y Django" target="_blank">
+                          <Image 
+                                src="/pare-aqui-app.jpg"
+                                fill={true}
+                                alt="Aplicación fullstack de Alquiler de Estacionamientos - con React y Django"
+                                className={styles.img} 
+                                loading="lazy"
+                          />                                                                               
+                          <h4 className={styles.h4}>Aplicación fullstack de Alquiler de Estacionamientos - con React y Django</h4>
+                        </Link>
+                        
+
+                    </article>
 
                     <article className={styles.article}>
                         
@@ -179,14 +196,19 @@ export default function Home() {
             <section className={styles.about} id="about">
                 <h2 className={styles.h2}>Sobre mi</h2>
                 
-                  <p className={styles.p}>Soy <strong>idealista y curiosa</strong>. Quiero hacer del mundo un lugar mejor a través de aplicaciones 
-                                    prácticas que faciliten y mejoren la calidad de vida, la gestión del tiempo y aporten soluciones 
+                  <p className={styles.p}>Soy <strong>idealista y curiosa</strong>. 
+                  Quiero hacer del mundo un lugar mejor a través de aplicaciones 
+                  prácticas que faciliten y mejoren la calidad de vida, la gestión 
+                  del tiempo y aporten soluciones 
                                       a problemas cotidianos.
                   </p>
                                         
-                  <p className={styles.p}>Me gusta trabajar con <strong>claridad y honestidad</strong> como pilar fundamental, siempre tratando de mantener una actitud 
-                                        positiva y pensar en <strong>soluciones</strong>, en lugar de problemas. Me gusta hacer muchas preguntas 
-                                          y estoy abierta a críticas constructivas para evolucionar y crecer. 
+                  <p className={styles.p}>Me gusta trabajar con <strong>claridad y 
+                    honestidad</strong> como pilar fundamental, siempre tratando de 
+                    mantener una actitud 
+                    positiva y pensar en <strong>soluciones</strong>, en lugar de 
+                    problemas. Me gusta hacer muchas preguntas 
+                     y estoy abierta a críticas constructivas para evolucionar y crecer. 
                    </p>                
                                     
                    <p className={styles.p}>Soy <strong>
