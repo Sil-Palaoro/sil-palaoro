@@ -4,10 +4,18 @@
 import styles from '../styles/HomePpal.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
+// import useTranslation from "next-translate/useTranslation";
+import { useLanguage } from '../../context/LanguageContext';
+import en from '../../public/locales/en';
+import es from '../../public/locales/es';
+
 
 /*Página principal*/
 
 export default function Home() {
+    const { language } = useLanguage();
+    const t = language === 'en' ? en : es;
+
   return (
     <body className="body">    
         
@@ -16,16 +24,51 @@ export default function Home() {
                 
                 <section className={styles.seccion} id="home">
                     <h2 className={styles.h2}>Silvina Palaoro</h2>
-                    <h3 className={styles.h3}>Backend/Full Stack Developer</h3>
+                    <h3 className={styles.h3}>Backend Developer</h3>
                 </section>
             </div>
               
             <section className={styles.projects} id="projects">
-                <h2 className={styles.h2}>Proyectos</h2>
+                <h2 className={styles.h2}>{t("tituloProjects")}</h2>
               
                 <div className={styles.grid}>
 
                 <article className={styles.article}>
+                        
+                        <Link href="https://react-blog-silvipalaoro.web.app/" 
+                        title="Aplicación fullstack de Blog social - con React, Next.js y Firebase" target="_blank">
+                          <Image 
+                                src="/Blog-app.jpg"
+                                fill={true}
+                                alt="Aplicación fullstack de Blog social - con React y Firebase"
+                                className={styles.img} 
+                                loading="lazy"
+                          />                                                                               
+                          <h4 className={styles.h4}>Aplicación fullstack de Blog social - con React, Next.js y Firebase</h4>
+                        </Link>
+                        
+
+                </article>
+
+
+                <article className={styles.article}>
+                        
+                        <Link href="https://parterasmayeutica.com/doulas" 
+                        title="Página web e implementación botón de Whatsapp - con React" target="_blank">
+                          <Image 
+                                src="/pag-doulas.jpg"
+                                fill={true}
+                                alt="Página web e implementación botón de Whatsapp - con React"
+                                className={styles.img} 
+                                loading="lazy"
+                          />                                                                               
+                          <h4 className={styles.h4}>Página web e implementación botón de Whatsapp - con React</h4>
+                        </Link>
+                        
+
+                    </article>
+
+                    <article className={styles.article}>
                         
                         <Link href="https://pareaqui.vercel.app/" 
                         title="Aplicación fullstack de Alquiler de espacios de Estacionamiento - con React y Django" target="_blank">
@@ -159,7 +202,7 @@ export default function Home() {
                 </div>
             </section>
             <section className={styles.languajes} id="skills">
-                <h2 className={styles.h2}>Lenguajes, tecnologías y librerías</h2>
+                <h2 className={styles.h2}>{t("tituloSkills")}</h2>
                 <p className={styles.p}><strong>
                     Backend</strong> 
                 </p> 
@@ -194,7 +237,7 @@ export default function Home() {
 
               
             <section className={styles.about} id="about">
-                <h2 className={styles.h2}>Sobre mi</h2>
+                <h2 className={styles.h2}>{t("tituloAbout")}</h2>
                 
                   <p className={styles.p}>Soy <strong>idealista y curiosa</strong>. 
                   Quiero hacer del mundo un lugar mejor a través de aplicaciones 

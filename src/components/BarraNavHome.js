@@ -4,12 +4,14 @@ import Link from 'next/link';
 import styles from "../styles/HomePpal.module.css";
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
-
+import { useLanguage } from '../../context/LanguageContext';
 
 
 function BarraNavHome () {
-  const [isClient, setIsClient] = useState(false)
-  const pathname = usePathname()
+  const [isClient, setIsClient] = useState(false);
+  const pathname = usePathname();
+  const { language, changeLanguage } = useLanguage();
+
  
   useEffect(() => {
     setIsClient(true)
@@ -29,16 +31,21 @@ function BarraNavHome () {
       <nav className={styles.nav}>
         <ul className={styles.ul}>
           <li className={styles.li}>
-          <Link title="Home" className={styles.a} href="/">Home</Link>
+            <Link title="Home" className={styles.a} href="/">Home</Link>
           </li>          
           <li className={styles.li}>
-          <Link href="#projects" title="Projects" className={styles.a}>Projects</Link>
+            <Link href="#projects" title="Projects" className={styles.a}>Projects</Link>
           </li>
           <li className={styles.li}>
-          <Link href="#skills" title="Skills" className={styles.a}>Skills</Link>
+            <Link href="#skills" title="Skills" className={styles.a}>Skills</Link>
           </li>
           <li className={styles.li}>
-          <Link href="#about" title="About" className={styles.a}>About</Link>
+            <Link href="#about" title="About" className={styles.a}>About</Link>
+          </li>
+          <li className={styles.li}>
+            <button onClick={() => changeLanguage(language === 'en' ? 'es' : 'en')}>
+                {language === 'en' ? 'ES' : 'EN'}
+            </button>
           </li>          
          </ul>
       </nav>
