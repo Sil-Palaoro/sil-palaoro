@@ -2,7 +2,7 @@
 "use client"
 import { useState, useEffect } from 'react';
 import Atras from "./Atras.js";
-import styles from "../styles/page.module.css";
+import styles from "../../styles/page.module.css";
 import { usePathname } from 'next/navigation';
 
 function Footer() {
@@ -24,7 +24,7 @@ function Footer() {
           fontFamily: 'Raleway',     
           position: 'relative',
           bottom: 0,                
-          }}>Copyright@2024 Silvina Palaoro</h3>
+          }}>Copyright@2025 Silvina Palaoro</h3>
         </div> :
         ""}
     </>    

@@ -1,9 +1,9 @@
 /*Layout de la App con metadata, head (favicon, fuentes), y ubicación de los componentes de la 
 Barra de Navegación y Footer */
 
-import Footer from "@/components/Footer";
-import BarraNavHome from "@/components/BarraNavHome";
-import ClientWrapper from "@/components/ClientWrapper";
+import Footer from "./components/Footer";
+import BarraNavHome from "./components/BarraNavHome";
+import ClientWrapper from "./components/ClientWrapper";
 
 
 export const metadata = {
@@ -11,9 +11,15 @@ export const metadata = {
   description: "Portfolio",
 };
 
-export default function LayoutHome({ children }) {
+export async function generateStaticParams() {
+  return ['es', 'en'].map((lang) => ({ locale: lang }));
+}
+
+export default function LayoutHome({ children, params }) {
+  const lang = params?.locale || 'es';
+
   return (
-    <html lang="es">
+    <html lang={lang}>
       <head>      
         <link
           href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,600;1,700&family=Josefin+Slab:wght@500&family=Lato:wght@700&family=Merriweather:wght@300&family=Poppins:ital,wght@1,600&display=swap"

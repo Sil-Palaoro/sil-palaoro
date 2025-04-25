@@ -1,7 +1,8 @@
 //Componente de la Barra de navegación
 "use client"
 import Link from 'next/link';
-import styles from "../styles/HomePpal.module.css";
+// import { useRouter } from 'next/router';
+import styles from "../../styles/HomePpal.module.css";
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import { useLanguage } from '../../context/LanguageContext';
@@ -10,6 +11,7 @@ import { useLanguage } from '../../context/LanguageContext';
 function BarraNavHome () {
   const [isClient, setIsClient] = useState(false);
   const pathname = usePathname();
+  // const { locale } = useRouter();
   const { language, changeLanguage } = useLanguage();
 
  
@@ -19,10 +21,10 @@ function BarraNavHome () {
  
   return (
     <>
-    {isClient === true && pathname === '/' ?
+    {isClient && (
     <header className={styles.header}>
       <h1 className={styles.h1}>
-      <Link href="/" title="Silvina Palaoro" className={styles.a}>
+      <Link href={`/${language}`} title="Silvina Palaoro" className={styles.a}>
         Silvina Palaoro
       </Link>
       </h1>
@@ -31,16 +33,16 @@ function BarraNavHome () {
       <nav className={styles.nav}>
         <ul className={styles.ul}>
           <li className={styles.li}>
-            <Link title="Home" className={styles.a} href="/">Home</Link>
+            <Link title="Home" className={styles.a} href={`/${language}`}>Home</Link>
           </li>          
           <li className={styles.li}>
-            <Link href="#projects" title="Projects" className={styles.a}>Projects</Link>
+            <Link href={`/${language}#projects`} title="Projects" className={styles.a}>Projects</Link>
           </li>
           <li className={styles.li}>
-            <Link href="#skills" title="Skills" className={styles.a}>Skills</Link>
+            <Link href={`/${language}#skills`} title="Skills" className={styles.a}>Skills</Link>
           </li>
           <li className={styles.li}>
-            <Link href="#about" title="About" className={styles.a}>About</Link>
+            <Link href={`/${language}#about`} title="About" className={styles.a}>About</Link>
           </li>
           <li className={styles.li}>
             <button onClick={() => changeLanguage(language === 'en' ? 'es' : 'en')}>
@@ -49,8 +51,8 @@ function BarraNavHome () {
           </li>          
          </ul>
       </nav>
-    </header> :
-    " "}
+    </header>
+    )}
     </>
   );  
 }
