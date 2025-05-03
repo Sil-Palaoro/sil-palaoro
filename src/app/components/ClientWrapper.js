@@ -1,5 +1,5 @@
 "use client";
-import { useEffect } from 'react';
+import { useEffect, Suspense } from 'react';
 import { LanguageProvider } from "../../context/LanguageContext";
 import '../../../i18n';
 
@@ -7,7 +7,9 @@ export default function ClientWrapper({ children }) {
   // useEffect(() => {}, []);
   return (
     <LanguageProvider>
-    {children}
+      <Suspense fallback={<div>Loading...</div>}>
+        {children}
+      </Suspense>
     </LanguageProvider>
   )
 };

@@ -13,6 +13,7 @@ function BarraNavHome () {
   const pathname = usePathname();
   // const { locale } = useRouter();
   const { language, changeLanguage } = useLanguage();
+  console.log("BarraNavHome language:", language); // Debugging
 
  
   useEffect(() => {
@@ -45,8 +46,13 @@ function BarraNavHome () {
             <Link href={`/${language}#about`} title="About" className={styles.a}>About</Link>
           </li>
           <li className={styles.li}>
-            <button onClick={() => changeLanguage(language === 'en' ? 'es' : 'en')}>
-                {language === 'en' ? 'ES' : 'EN'}
+            <button onClick={() => {
+              console.log("Language in button in BarraNavHome:", language);
+              changeLanguage(language === 'es' ? 'en' : 'es');
+              console.log("Button clicked. Language in button in BarraNavHome:", language);
+            }} className={styles.button}>
+            "Change to EN/ES"
+                {/* {language === 'es' ? "Change to EN" : "Change to ES"} */}
             </button>
           </li>          
          </ul>

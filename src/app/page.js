@@ -1,26 +1,31 @@
 /*Homepage Portfolio - Silvina Palaoro*/
 
 "use client"
-// import { useRouter } from 'next/router';
-// import { usePathname } from 'next/navigation'; 
+
 import styles from '../styles/HomePpal.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useTranslation } from 'react-i18next';
-// import { useLanguage } from '../../../context/LanguageContext';
-// import en from '../../../public/locales (quitar)/en';
-// import es from '../../../public/locales (quitar)/es';
+import { useState, useEffect } from 'react';
+import { useLanguage } from '../context/LanguageContext';
+
 
 
 /*Página principal*/
 
-export default function Home() {
-    // const { locale } = useRouter(); // Get the current locale
-    // const pathname = usePathname(); // Get the current path
-    const { t } = useTranslation();
+export default function Home() {    
+    const { t, i18n } = useTranslation();
+    const { language } = useLanguage();
 
-    // const { language } = useLanguage();
-    // const t = language === 'en' ? en : es;
+    // const [language, setLanguage] = useState('es');
+
+    console.log("Current language in useTranslation:", i18n.language);
+    console.log("Rendering Home page");
+
+    useEffect(() => {
+        i18n.changeLanguage(language); // Update the language in i18n
+    }, [language]);
+
 
   return (              
         <main className={styles.main}>
@@ -211,14 +216,14 @@ export default function Home() {
                     Backend</strong> 
                 </p> 
                 <p className={styles.p}>
-                    Python - Django REST Framework - Kotlin - Node.js - SQL (SQLite y PostgreSQL)
+                    Python - Django REST Framework - Node.js - SQL (SQLite y PostgreSQL) - Firebase (Cloud Firestore)
                 </p> 
                 <p className={styles.p}><strong>                    
                     Front End                                      
                 </strong> 
                 </p> 
                 <p className={styles.p}>
-                    Next.js - React.js - JavaScript - HTML5 - CSS                 
+                React.js - Next.js - JavaScript - HTML5 - CSS                 
                 </p>       
 
                 <p className={styles.p}><strong>                    
@@ -226,7 +231,7 @@ export default function Home() {
                 </strong> 
                 </p> 
                 <p className={styles.p}>
-                    Git (GitHub y GitLab) - Trello                  
+                    Git (GitHub y GitLab) - Vercel - Firebase (Hosting) - Trello                  
                 </p>  
                 
                 <p className={styles.p}><strong>                    
@@ -234,7 +239,7 @@ export default function Home() {
                 </strong> 
                 </p> 
                 <p className={styles.p}>
-                    Español (nativo) - Inglés (Intermedio-alto) - Portugués (básico)                  
+                    Español (nativo) - Inglés (B2) - Portugués (básico)                  
                 </p>  
             </section>
 
@@ -345,3 +350,12 @@ export default function Home() {
   );
 }
 
+// import { useLanguage } from '../../../context/LanguageContext';
+// import en from '../../../public/locales (quitar)/en';
+// import es from '../../../public/locales (quitar)/es';
+
+
+// const { locale } = useRouter(); // Get the current locale
+    // const pathname = usePathname(); // Get the current path
+    // const { language } = useLanguage();
+    // const t = language === 'en' ? en : es;

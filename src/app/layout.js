@@ -4,6 +4,8 @@ Barra de Navegación y Footer */
 import Footer from "./components/Footer";
 import BarraNavHome from "./components/BarraNavHome";
 import ClientWrapper from "./components/ClientWrapper";
+import { headers } from "next/headers";
+
 
 
 export const metadata = {
@@ -11,15 +13,22 @@ export const metadata = {
   description: "Portfolio",
 };
 
-export async function generateStaticParams() {
-  return ['es', 'en'].map((lang) => ({ locale: lang }));
-}
+// export async function generateStaticParams() {
+//   return ['es', 'en'].map((lang) => ({ locale: lang }));
+// }
 
-export default function LayoutHome({ children, params }) {
-  const lang = params?.locale || 'es';
+export default function LayoutHome({ children }) {
+  // console.log("Layout params:", params); // Debugging
+  const headersList = headers(); // Access headers
+  const locale = headersList.get('x-locale'); // Get locale from headers or default to 'es'
+  // const lang = params?.locale || 'es';
+  console.log("Layout locale from headers:", locale);
+
+  // console.log("Layout lang:", lang); // Debugging
+  console.log("Rendering Layout");
 
   return (
-    <html lang={lang}>
+    <html lang={locale}>
       <head>      
         <link
           href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,600;1,700&family=Josefin+Slab:wght@500&family=Lato:wght@700&family=Merriweather:wght@300&family=Poppins:ital,wght@1,600&display=swap"

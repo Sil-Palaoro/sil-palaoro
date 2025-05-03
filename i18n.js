@@ -8,9 +8,17 @@ i18n
   ))
   .use(initReactI18next)
   .init({
+    resources: {
+      en: {
+          translation: require('./locales/en/translation.json'),
+      },
+      es: {
+          translation: require('./locales/es/translation.json'),
+      },
+    },
     lng: 'es',
     fallbackLng: 'es',
-    supportedLngs: ['es', 'en'],
+    // supportedLngs: ['es', 'en'],
     ns: ['translation'],
     defaultNS: 'translation',
     interpolation: {

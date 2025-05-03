@@ -1,6 +1,6 @@
 //Pagina de Tareas
 
-import TaskList from "../../../components/TaskList";
+import TaskList from "../../../[locale]/components/TaskList";
 import styles from '../../../styles/Home.module.css';
 
 
