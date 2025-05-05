@@ -6,7 +6,7 @@ import styles from '../styles/HomePpal.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useTranslation } from 'react-i18next';
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 
 
@@ -17,7 +17,6 @@ export default function Home() {
     const { t, i18n } = useTranslation();
     const { language } = useLanguage();
 
-    // const [language, setLanguage] = useState('es');
 
     console.log("Current language in useTranslation:", i18n.language);
     console.log("Rendering Home page");
@@ -359,3 +358,6 @@ export default function Home() {
     // const pathname = usePathname(); // Get the current path
     // const { language } = useLanguage();
     // const t = language === 'en' ? en : es;
+
+        // const [language, setLanguage] = useState('es');
+

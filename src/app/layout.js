@@ -13,18 +13,12 @@ export const metadata = {
   description: "Portfolio",
 };
 
-// export async function generateStaticParams() {
-//   return ['es', 'en'].map((lang) => ({ locale: lang }));
-// }
 
 export default function LayoutHome({ children }) {
-  // console.log("Layout params:", params); // Debugging
   const headersList = headers(); // Access headers
   const locale = headersList.get('x-locale'); // Get locale from headers or default to 'es'
-  // const lang = params?.locale || 'es';
-  console.log("Layout locale from headers:", locale);
-
-  // console.log("Layout lang:", lang); // Debugging
+  
+  console.log("Layout locale from headers:", locale);  
   console.log("Rendering Layout");
 
   return (
@@ -49,3 +43,13 @@ export default function LayoutHome({ children }) {
     </html>
   );
 }
+
+
+// export async function generateStaticParams() {
+//   return ['es', 'en'].map((lang) => ({ locale: lang }));
+// }
+
+
+// console.log("Layout params:", params); // Debugging
+  // const lang = params?.locale || 'es';
+  // console.log("Layout lang:", lang); // Debugging

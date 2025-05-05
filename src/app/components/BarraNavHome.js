@@ -1,18 +1,20 @@
 //Componente de la Barra de navegación
 "use client"
 import Link from 'next/link';
-// import { useRouter } from 'next/router';
 import styles from "../../styles/HomePpal.module.css";
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import { useLanguage } from '../../context/LanguageContext';
+import { useTranslation } from 'react-i18next';
 
 
 function BarraNavHome () {
   const [isClient, setIsClient] = useState(false);
   const pathname = usePathname();
-  // const { locale } = useRouter();
   const { language, changeLanguage } = useLanguage();
+  const { t, i18n } = useTranslation();
+  
+
   console.log("BarraNavHome language:", language); // Debugging
 
  
@@ -37,22 +39,20 @@ function BarraNavHome () {
             <Link title="Home" className={styles.a} href={`/${language}`}>Home</Link>
           </li>          
           <li className={styles.li}>
-            <Link href={`/${language}#projects`} title="Projects" className={styles.a}>Projects</Link>
+            <Link href={`/${language}#projects`} title="Projects" className={styles.a}>{t("tituloProjects")}</Link>
           </li>
           <li className={styles.li}>
-            <Link href={`/${language}#skills`} title="Skills" className={styles.a}>Skills</Link>
+            <Link href={`/${language}#skills`} title="Skills" className={styles.a}>{t("skills")}</Link>
           </li>
           <li className={styles.li}>
-            <Link href={`/${language}#about`} title="About" className={styles.a}>About</Link>
+            <Link href={`/${language}#about`} title="About" className={styles.a}>{t("tituloAbout")}</Link>
           </li>
           <li className={styles.li}>
             <button onClick={() => {
               console.log("Language in button in BarraNavHome:", language);
               changeLanguage(language === 'es' ? 'en' : 'es');
-              console.log("Button clicked. Language in button in BarraNavHome:", language);
             }} className={styles.button}>
-            "Change to EN/ES"
-                {/* {language === 'es' ? "Change to EN" : "Change to ES"} */}
+                {language === 'es' ? "Change to EN" : "Cambiar a ES"}
             </button>
           </li>          
          </ul>
@@ -85,3 +85,8 @@ export default BarraNavHome;
             </nav>
         </header>
 */}
+
+
+// import { useRouter } from 'next/router';
+
+  // const { locale } = useRouter();

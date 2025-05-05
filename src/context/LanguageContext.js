@@ -17,31 +17,19 @@ export const LanguageProvider = ({ children }) => {
             if (['en', 'es'].includes(locale) && locale !== language) {
                 setLanguage(locale);
                 console.log("Language updated to:", language);
-            } 
-        // console.log("Current language:", language, "and the pathname is", pathname); // Debugging
-
-            // else {
-            //     setLanguage('es'); // Default to 'es' if no valid locale is found
-            // }
+            }         
         }
     }, [pathname]);
 
     const changeLanguage = (lang) => {
-        // router.push({ pathname: router.pathname, query: router.query }, router.asPath, { locale: lang });
         const newPath = `/${lang}${pathname.replace(/^\/(en|es)/, '')}`.replace(/\/$/, ''); // Replace the locale in the path
         setLanguage(lang); // Update the language state
         router.push(newPath); // Navigate programmatically
-        // window.location.href = newPath; // Navigate to the new path
         console.log("Language changed to:", lang, "and the new path is", newPath); // Debugging
     };
 
     console.log("Current language in LanguageProvider:", language); // Debugging 
-    
-    // useEffect(() => {
-    //     setLanguage(router.locale || 'es');
-    //   }, [router.locale]);
-    
-
+          
     return (
         <LanguageContext.Provider value={{ language, changeLanguage }}>
             {children}
@@ -68,3 +56,17 @@ export const useLanguage = () => useContext(LanguageContext);
     // if (!routerReady) {
     //     return null; // o un spinner de carga
     // }
+
+    // console.log("Current language:", language, "and the pathname is", pathname); // Debugging
+
+            // else {
+            //     setLanguage('es'); // Default to 'es' if no valid locale is found
+            // }
+
+
+      // router.push({ pathname: router.pathname, query: router.query }, router.asPath, { locale: lang });
+
+    // useEffect(() => {
+    //     setLanguage(router.locale || 'es');
+    //   }, [router.locale]);
+    

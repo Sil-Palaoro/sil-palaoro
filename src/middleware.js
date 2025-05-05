@@ -2,7 +2,7 @@
 import { NextResponse } from 'next/server';
 import { headers } from "next/headers";
 
-//for this configuration, all three path are rendering, and the middleware is working, but the translation is not working.  
+  
 const I18N_CONFIG = {
   locales: ['es', 'en'],
   defaultLocale: 'es',

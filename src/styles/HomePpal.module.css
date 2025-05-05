@@ -691,24 +691,33 @@
     padding: 7em 2em 2em 2em;
   }  
 
-  .button {
-    margin: 0;
+  .nav ul li button {
+    margin: 0 1em 0 0;
     padding: 0;
-    border: 0;
+    /* border: 0; */
     box-sizing: border-box;
-    vertical-align: baseline;
+    /* vertical-align: baseline; */
 
-    display: block;
-    text-decoration: none;
-    color: black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 
-    border-radius: 50%;
-    padding: 1em 1em 1em;
-    text-transform: uppercase;
-    font-weight: 600;
+    /* display: block; */
+    /* text-decoration: none; */
+    /* color: black; */
+    background: transparent;
+    border-radius: 20%;
+    border: 1px solid rgba(255, 255, 255, 0);
+    /* padding: 1em 1em 1em; */
+    /* text-transform: uppercase; */
+    font-weight: 700;
     transition: all .5s ease;
   }
   
+  .nav ul li button:hover {    
+    cursor: pointer;    
+  }
   
   /* @keyframes circulo1{
     from{
