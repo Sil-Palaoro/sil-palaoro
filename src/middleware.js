@@ -10,20 +10,23 @@ export default function middleware(request) {
   const pathname = request.nextUrl.pathname; // Get the current path
   const locale = pathname.split('/')[1]; // Extract the first segment of the path
 
-  console.log("Middleware is running for:", pathname);
+  // Only log in development
+  if (process.env.NODE_ENV === 'development') {
+    console.log("Middleware is running for:", pathname);
+  }
 
   // Exclude static files, API routes, and Next.js internals
   const excludedPaths = [
     '/_next',
     '/favicon.ico',
     '/static',
-    '/api',
+    '/api', 
+    '/.well-known'
   ];
 
   const isStaticAsset = /\.(jpg|jpeg|png|gif|svg|json)$/.test(pathname);
 
   if (excludedPaths.some((path) => pathname.startsWith(path)) || isStaticAsset) {
-    console.log("Excluded path:", pathname);
     return NextResponse.next(); // Skip middleware for excluded paths
   }
 
@@ -31,16 +34,14 @@ export default function middleware(request) {
   if (pathname === '/') {
       const url = request.nextUrl.clone();
       url.pathname = `/${I18N_CONFIG.defaultLocale}`; // Default locale
-      const response = NextResponse.redirect(url);
-      return response;
+      return NextResponse.redirect(url);
   }
   
    // Rewrite "/es" and "/en" to "/"
   if (I18N_CONFIG.locales.includes(locale)) {
     const url = request.nextUrl.clone();
     url.pathname = pathname.replace(`/${locale}`, ''); // Rewrite to "/"
-    const response = NextResponse.rewrite(url);  
-    return response;
+    return NextResponse.rewrite(url);
   }  
 
   return NextResponse.next();

@@ -2,7 +2,7 @@
 "use client"
 import Link from 'next/link';
 import styles from "../../styles/HomePpal.module.css";
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 import { useTranslation } from 'react-i18next';
 
@@ -10,23 +10,21 @@ import { useTranslation } from 'react-i18next';
 function BarraNavHome () {
   const [isClient, setIsClient] = useState(false);
   const [isActive, setIsActive] = useState(false);
-
   const { language, changeLanguage } = useLanguage();
   const { t } = useTranslation();
  
 
-  console.log("BarraNavHome language:", language); // Debugging
+  const handleClick = useCallback(() => {
+        setIsActive(prev => !prev);
+    }, []);
 
+  const handleLanguageChange = useCallback(() => {
+        changeLanguage(language === 'es' ? 'en' : 'es');
+    }, [language, changeLanguage]);
  
   useEffect(() => {
     setIsClient(true)
   }, [])
-
-
-  const handleClick = () => {   
-      setIsActive(!isActive);
-      console.log("Classes:", `${styles.hamMenuButton} ${isActive ? styles.active : ''}`);
-    };
   
  
   return (
@@ -55,10 +53,7 @@ function BarraNavHome () {
             <Link href={`/${language}#about`} title="About" className={styles.a}>{t("tituloAbout")}</Link>
           </li>
           <li className={styles.li}>
-            <button onClick={() => {
-              console.log("Language in button in BarraNavHome:", language);
-              changeLanguage(language === 'es' ? 'en' : 'es');
-            }} className={styles.languageButton}>
+            <button onClick={handleLanguageChange} className={styles.languageButton}>
                 {language === 'es' ? "Change to EN" : "Cambiar a ES"}
             </button>
           </li>          
@@ -95,10 +90,7 @@ function BarraNavHome () {
             <Link href={`/${language}#about`} title="About" className={styles.a}>{t("tituloAbout")}</Link>
           </li>
           <li className={styles.liHam}>
-            <button onClick={() => {
-              console.log("Language in button in BarraNavHome:", language);
-              changeLanguage(language === 'es' ? 'en' : 'es');
-            }} className={styles.languageButton}>
+            <button onClick={handleLanguageChange} className={styles.languageButton}>
                 {language === 'es' ? "Change to EN" : "Cambiar a ES"}
             </button>
           </li>       

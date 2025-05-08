@@ -1,14 +1,12 @@
 /*Homepage Portfolio - Silvina Palaoro*/
-
 "use client"
 
 import styles from '../styles/HomePpal.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useTranslation } from 'react-i18next';
-import { useEffect } from 'react';
+import { useEffect, useCallback } from 'react';
 import { useLanguage } from '../context/LanguageContext';
-
 
 
 /*Página principal*/
@@ -17,13 +15,20 @@ export default function Home() {
     const { t, i18n } = useTranslation();
     const { language } = useLanguage();
 
-
-    console.log("Current language in useTranslation:", i18n.language);
-    console.log("Rendering Home page");
+    const updateLanguage = useCallback(() => {
+        i18n.changeLanguage(language);
+    }, [language, i18n]);
+    
 
     useEffect(() => {
-        i18n.changeLanguage(language); // Update the language in i18n
-    }, [language]);
+        updateLanguage();
+    }, [updateLanguage]);
+
+    // Console logs only in development
+    if (process.env.NODE_ENV === 'development') {
+        console.log("Rendering Home page");
+        console.log("Current language in useTranslation:", i18n.language);
+    }
 
 
   return (              

@@ -22,7 +22,7 @@ export default function LayoutHome({ children }) {
   console.log("Rendering Layout");
 
   return (
-    <html lang={locale}>
+    <html lang={locale} suppressHydrationWarning>
       <head>      
         <link
           href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,600;1,700&family=Josefin+Slab:wght@500&family=Lato:wght@700&family=Merriweather:wght@300&family=Poppins:ital,wght@1,600&display=swap"
@@ -32,7 +32,7 @@ export default function LayoutHome({ children }) {
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossOrigin="anonymous" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" media="all"/>
       </head>
-      <body>
+      <body suppressHydrationWarning>
         <ClientWrapper>
           <BarraNavHome />
           {children}
