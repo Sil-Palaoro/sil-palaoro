@@ -3,30 +3,31 @@
 import Link from 'next/link';
 import styles from "../../styles/HomePpal.module.css";
 import { useState, useEffect } from 'react';
-import { usePathname } from 'next/navigation';
 import { useLanguage } from '../../context/LanguageContext';
 import { useTranslation } from 'react-i18next';
 
 
 function BarraNavHome () {
   const [isClient, setIsClient] = useState(false);
-  const pathname = usePathname();
+  const [isActive, setIsActive] = useState(false);
+
   const { language, changeLanguage } = useLanguage();
-  const { t, i18n } = useTranslation();
-  // const hamMenuRef = useRef(null);
-  // const hamNavRef = useRef(null);
-  const [hamMenuButtonVar, setHamMenuButtonVar] = useState(null);
-  const [offScreenMenuVar, setOffScreenMenuVar] = useState(null);  
+  const { t } = useTranslation();
+ 
 
   console.log("BarraNavHome language:", language); // Debugging
 
  
   useEffect(() => {
     setIsClient(true)
-
-    setHamMenuButtonVar(document.getElementById('hamMenuButton'));
-    setOffScreenMenuVar(document.getElementById('offScreenMenu'));
   }, [])
+
+
+  const handleClick = () => {   
+      setIsActive(!isActive);
+      console.log("Classes:", `${styles.hamMenuButton} ${isActive ? styles.active : ''}`);
+    };
+  
  
   return (
     <>
@@ -65,42 +66,21 @@ function BarraNavHome () {
 
         {/*Menu hamburguesa*/}
         <div className={styles.ul} id={styles.menuBar}>
-        {/* <div className={styles.hamNav} id={styles.menu}> */}
           <button 
-          className={styles.hamMenuButton}
+          className={`${styles.hamMenuButton} ${isActive ? styles.active : ''}`}
           id={styles.hamMenuButton} 
-          // ref={hamMenuRef}
-          onClick={ () => {
-            // hamMenuRef.current.classList.toggle('active');
-            // hamNavRef.current.classList.toggle('active');
-            // const hamMenuButtonVar = document.getElementById('hamMenuButton');
-            // const offScreenMenuVar = document.getElementById('offScreenMenu');
-
-            console.log("hamMenuButtonVar:", hamMenuButtonVar);
-            console.log("offScreenMenuVar:", offScreenMenuVar);
-
-            if (hamMenuButtonVar && offScreenMenuVar) {
-              hamMenuButtonVar.classList.toggle('active');
-              offScreenMenuVar.classList.toggle('active');
-            } else {
-              console.error("Elements not found!");
-            }
-
-            // hamMenuButtonVar.classList.toggle('active');
-            // offScreenMenuVar.classList.toggle('active');
-          }}
+          onClick={handleClick}
           >
             <span></span>
             <span></span>
             <span></span>
           </button>
-        {/* </div> */}
         </div>
       </nav>
 
-      {/*Links Menu hamburguesa*/}   
 
-      <div className={styles.offScreenMenu} id={styles.offScreenMenu}>
+      {/*Links Menu hamburguesa*/}   
+      <div className={`${styles.offScreenMenu} ${isActive ? styles.active : ''}`} id={styles.offScreenMenu}>
         <ul className={styles.ulHam}>          
           <li className={styles.liHam}>
             <Link title="Home" className={styles.a} href={`/${language}`}>Home</Link>
@@ -118,7 +98,7 @@ function BarraNavHome () {
             <button onClick={() => {
               console.log("Language in button in BarraNavHome:", language);
               changeLanguage(language === 'es' ? 'en' : 'es');
-            }} className={styles.button}>
+            }} className={styles.languageButton}>
                 {language === 'es' ? "Change to EN" : "Cambiar a ES"}
             </button>
           </li>       
@@ -128,7 +108,7 @@ function BarraNavHome () {
     )}
     </>
   );  
-}
+};
 
 export default BarraNavHome;
 
@@ -157,3 +137,66 @@ export default BarraNavHome;
 // import { useRouter } from 'next/router';
 
   // const { locale } = useRouter();
+
+
+  //onClick function:
+  // hamMenuRef.current.classList.toggle('active');
+    // hamNavRef.current.classList.toggle('active');
+    // const hamMenuButtonVar = document.getElementById('hamMenuButton');
+    // const offScreenMenuVar = document.getElementById('offScreenMenu');
+
+
+    // if (hamMenuButtonVar && offScreenMenuVar) {
+    //   hamMenuButtonVar.classList.toggle('active');
+    //   offScreenMenuVar.classList.toggle('active');
+    // } else {
+    //   console.error("Elements not found!");
+    // }
+    // hamMenuButtonVar.classList.toggle('active');
+    // offScreenMenuVar.classList.toggle('active');
+
+
+    // import { usePathname } from 'next/navigation';
+
+  // const pathname = usePathname();
+  // const hamMenuButtonRef = useRef(null);
+  // const offScreenMenuRef = useRef(null);  
+
+
+
+    // setHamMenuButtonVar(document.getElementById('hamMenuButton'));
+    // setOffScreenMenuVar(document.getElementById('offScreenMenu')); 
+    // console.log("offScreenMenuRef:", offScreenMenuRef.current);
+    
+    
+    // if (hamMenuButtonRef.current && offScreenMenuRef.current) {
+    //   hamMenuButtonRef.current.classList.toggle('active');
+    //   offScreenMenuRef.current.classList.toggle('active');
+    // } else {
+    //   console.error("Elements not found!");
+
+      // if (hamMenuButtonRef.current) {
+      //   hamMenuButtonRef.current.classList.toggle('active');
+      //   console.log("hamMenuButtonRef:", hamMenuButtonRef.current);
+      // } else {
+      //   console.error("Element not found!");
+      // };
+
+      
+    // setHamMenuButtonVar(document.getElementById('hamMenuButton'));
+    // setOffScreenMenuVar(document.getElementById('offScreenMenu')); 
+    // console.log("offScreenMenuRef:", offScreenMenuRef.current);
+    
+    
+    // if (hamMenuButtonRef.current && offScreenMenuRef.current) {
+    //   hamMenuButtonRef.current.classList.toggle('active');
+    //   offScreenMenuRef.current.classList.toggle('active');
+    // } else {
+    //   console.error("Elements not found!");
+
+      // if (hamMenuButtonRef.current) {
+      //   hamMenuButtonRef.current.classList.toggle('active');
+      //   console.log("hamMenuButtonRef:", hamMenuButtonRef.current);
+      // } else {
+      //   console.error("Element not found!");
+      // };
