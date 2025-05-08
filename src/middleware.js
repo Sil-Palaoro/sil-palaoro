@@ -1,6 +1,4 @@
-// import { i18nRouter } from 'next-i18n-router';
 import { NextResponse } from 'next/server';
-import { headers } from "next/headers";
 
   
 const I18N_CONFIG = {
@@ -10,8 +8,7 @@ const I18N_CONFIG = {
 
 export default function middleware(request) {
   const pathname = request.nextUrl.pathname; // Get the current path
-  const requestHeaders = new Headers(request.headers)  
-
+  const locale = pathname.split('/')[1]; // Extract the first segment of the path
 
   console.log("Middleware is running for:", pathname);
 
@@ -34,31 +31,17 @@ export default function middleware(request) {
   if (pathname === '/') {
       const url = request.nextUrl.clone();
       url.pathname = `/${I18N_CONFIG.defaultLocale}`; // Default locale
-      requestHeaders.set('x-locale', 'es'); // Add the locale to the headers
       const response = NextResponse.redirect(url);
-      response.headers.set('x-locale', 'es'); // Pass the locale to the layout
-      const headersList = headers(); // Access headers
-      const passed_locale = headersList.get('x-locale'); // Get locale from headers
-      console.log("Passed locale in headers:", passed_locale); //debuging
       return response;
   }
-
   
-  const locale = pathname.split('/')[1]; // Extract the first segment of the path
-
    // Rewrite "/es" and "/en" to "/"
   if (I18N_CONFIG.locales.includes(locale)) {
     const url = request.nextUrl.clone();
     url.pathname = pathname.replace(`/${locale}`, ''); // Rewrite to "/"
-    requestHeaders.set('x-locale', locale); // Add the locale to the headers
-    const response = NextResponse.rewrite(url);
-    response.headers.set('x-locale', locale); // Pass the locale to the layout
-    const headersList = headers(); // Access headers
-    const passed_locale = headersList.get('x-locale'); // Get locale from headers
-    console.log("Passed locale in headers:", passed_locale); //debuging
+    const response = NextResponse.rewrite(url);  
     return response;
-  }
-  
+  }  
 
   return NextResponse.next();
 }
@@ -183,3 +166,24 @@ export const config = {
   //   console.log("Redirecting to default locale with pathname:", url.pathname);
   //   return NextResponse.redirect(url);
   // } 
+
+
+ // import { headers } from "next/headers";
+// import { i18nRouter } from 'next-i18n-router';
+
+
+ // const requestHeaders = new Headers(request.headers)  
+
+      // requestHeaders.set('x-locale', 'es'); // Add the locale to the headers
+      // response.headers.set('x-locale', 'es'); // Pass the locale to the layout
+      // const headersList = headers(); // Access headers
+      // const passed_locale = headersList.get('x-locale'); // Get locale from headers
+      // console.log("Passed locale in headers:", passed_locale); //debuging
+
+
+           // requestHeaders.set('x-locale', locale); // Add the locale to the headers
+
+    // response.headers.set('x-locale', locale); // Pass the locale to the layout
+    // const headersList = headers(); // Access headers
+    // const passed_locale = headersList.get('x-locale'); // Get locale from headers
+    // console.log("Passed locale in headers:", passed_locale); //debuging

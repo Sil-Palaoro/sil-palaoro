@@ -18,7 +18,7 @@ export default function LayoutHome({ children }) {
   const headersList = headers(); // Access headers
   const locale = headersList.get('x-locale'); // Get locale from headers or default to 'es'
   
-  console.log("Layout locale from headers:", locale);  
+  // console.log("Layout locale from headers:", locale);  
   console.log("Rendering Layout");
 
   return (
