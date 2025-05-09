@@ -47,7 +47,8 @@ export default function Home() {
                 <div className={styles.grid}>
 
                 <article className={styles.article}>
-                        
+                        {/* "Aplicación fullstack de Blog social - React, Next.js y Firebase" */}
+
                         <Link href="https://react-blog-silvipalaoro.web.app/" 
                         title={t("project12")} target="_blank">
                           <Image 
@@ -65,7 +66,8 @@ export default function Home() {
 
 
                 <article className={styles.article}>
-                        
+                        {/* "Página web e implementación formulario y botón de Whatsapp - React", */}
+
                         <Link href="https://parterasmayeutica.com/doulas" 
                         title={t("project11")} target="_blank">
                           <Image 
@@ -82,7 +84,8 @@ export default function Home() {
                     </article>
 
                     <article className={styles.article}>
-                        
+                        {/*"Aplicación fullstack de Alquiler de Estacionamientos - React, Django y Vercel", */}
+
                         <Link href="https://pareaqui.vercel.app/" 
                         title={t("project10")} target="_blank">
                           <Image 
@@ -99,7 +102,8 @@ export default function Home() {
                     </article>
 
                     <article className={styles.article}>
-                        
+                        {/*"Página web - Portafolio personal - React, NextJS, CSS y Vercel", */}
+
                         <Link href="https://sil-palaoro-sdyw.vercel.app/" title={t("project9")} target="_blank">
                           <Image 
                                 src="/portfolio.jpg"
@@ -116,7 +120,8 @@ export default function Home() {
 
 
                     <article className={styles.article}>
-                        
+                        {/*"Aplicación fullstack de Tareas - NextJS, Django y SQLite", */}
+
                         <Link href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/app-tareas" title={t("project8")} target="_blank">
                           <Image 
                                 src="/home-app-tareas.jpg"
@@ -132,7 +137,9 @@ export default function Home() {
                     </article>
 
                     <article className={styles.article}>
-                        <a href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/sim-movies" title={t("project7")} target="_blank">                        
+                        {/*"Simulador web películas y series - Kotlin"*/}
+
+                        <Link href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/sim-movies" title={t("project7")} target="_blank">                        
                           <Image 
                                   src="/simulador-movies-kotlin.jpg"
                                   fill={true}
@@ -141,12 +148,14 @@ export default function Home() {
                                   loading="lazy"
                           />                        
                           <h4 className={styles.h4}>{t("project7")}</h4>
-                        </a>
+                        </Link>
 
                     </article>
 
                     <article className={styles.article}>
-                        <a href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/turnero-farmacia" title={t("project6")} target="_blank">                        
+                        {/*"Turnero de Farmacia - Python"*/}
+
+                        <Link href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/turnero-farmacia" title={t("project6")} target="_blank">                        
                           <Image 
                                   src="/turnero-python.jpg"
                                   fill={true}
@@ -155,12 +164,14 @@ export default function Home() {
                                   loading="lazy"
                           />                        
                           <h4 className={styles.h4}>{t("project6")}</h4>
-                        </a>
+                        </Link>
 
                     </article>
 
                     <article className={styles.article}>
-                        <a href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/ahorcado" 
+                        {/*"Ahorcado - Python"*/}
+
+                        <Link href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/ahorcado" 
                         title={t("project5")}>                        
                           <Image 
                                   src="/ahorcado.jpg"
@@ -170,11 +181,13 @@ export default function Home() {
                                   loading="lazy"
                           />                        
                           <h4 className={styles.h4}>{t("project5")}</h4>
-                        </a>                        
+                        </Link>                        
                     </article>
 
                     <article className={styles.article}>
-                        <a href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/adivinador" 
+                        {/*"Adivina el número - Python"*/}
+
+                        <Link href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/adivinador" 
                         title={t("project4")}>                        
                           <Image 
                                   src="/adivina-numero.jpg"
@@ -184,11 +197,13 @@ export default function Home() {
                                   loading="lazy"
                           />                        
                           <h4 className={styles.h4}>{t("project4")}</h4>
-                        </a>                        
+                        </Link>                        
                     </article>
 
                     <article className={styles.article}>
-                        <a href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/catalogo" title={t("project3")}>                        
+                        {/*"Catalogo de productos - HTML5, Javascript y CSS", */}
+
+                        <Link href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/catalogo" title={t("project3")}>                        
                           <Image 
                                   src="/catalogo.jpg"
                                   fill={true}
@@ -197,11 +212,13 @@ export default function Home() {
                                   loading="lazy"
                           />                        
                           <h4 className={styles.h4}>{t("project3")}</h4>
-                        </a>
+                        </Link>
 
                     </article>
 
                     <article className={styles.article}>
+                        {/*"Formulario y tabla - HTML5, Javascript y CSS"*/}
+
                         <Link href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/formularioJS" title={t("project2")} target="_blank">                        
                           <Image 
                                   src="/formulario.jpg"
@@ -216,6 +233,8 @@ export default function Home() {
                     </article>
 
                     <article className={styles.article}>
+                        {/* "Calculadora - HTML5, Javascript y CSS"*/}
+
                         <Link href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/calculadora-js" title={t("project1")} target="_blank">                        
                           <Image 
                                   src="/calculadora.jpg"
@@ -240,7 +259,7 @@ export default function Home() {
                     Python - Django REST Framework - Node.js - SQL (SQLite y PostgreSQL) - Firebase (Cloud Firestore)
                 </p> 
                 <p className={styles.p}><strong>                    
-                    Front End                                      
+                    Frontend                                      
                 </strong> 
                 </p> 
                 <p className={styles.p}>
@@ -294,7 +313,7 @@ export default function Home() {
                     i18nKey="about6"
                     components={{
                         strong: <strong />,
-                        a: <a href="http://www.parterasmayeutica.com" className={styles.sobremi} title="Escuela Mayeutica" target="_blank" />
+                        a: <a href="http://www.parterasmayeutica.com" className={styles.sobremi} title="Escuela Mayéutica" target="_blank" />
                     }} />
                 </p>                
                 
