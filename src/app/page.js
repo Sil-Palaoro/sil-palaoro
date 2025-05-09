@@ -4,7 +4,7 @@
 import styles from '../styles/HomePpal.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useEffect, useCallback } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 
@@ -49,15 +49,15 @@ export default function Home() {
                 <article className={styles.article}>
                         
                         <Link href="https://react-blog-silvipalaoro.web.app/" 
-                        title="Aplicación fullstack de Blog social - con React, Next.js y Firebase" target="_blank">
+                        title={t("project12")} target="_blank">
                           <Image 
                                 src="/Blog-app.jpg"
                                 fill={true}
-                                alt="Aplicación fullstack de Blog social - con React y Firebase"
+                                alt={t("project12")}
                                 className={styles.img} 
                                 loading="lazy"
                           />                                                                               
-                          <h4 className={styles.h4}>Aplicación fullstack de Blog social - con React, Next.js y Firebase</h4>
+                          <h4 className={styles.h4}>{t("project12")}</h4>
                         </Link>
                         
 
@@ -67,15 +67,15 @@ export default function Home() {
                 <article className={styles.article}>
                         
                         <Link href="https://parterasmayeutica.com/doulas" 
-                        title="Página web e implementación botón de Whatsapp - con React" target="_blank">
+                        title={t("project11")} target="_blank">
                           <Image 
                                 src="/pag-doulas.jpg"
                                 fill={true}
-                                alt="Página web e implementación botón de Whatsapp - con React"
+                                alt={t("project11")}
                                 className={styles.img} 
                                 loading="lazy"
                           />                                                                               
-                          <h4 className={styles.h4}>Página web e implementación botón de Whatsapp - con React</h4>
+                          <h4 className={styles.h4}>{t("project11")}</h4>
                         </Link>
                         
 
@@ -84,15 +84,15 @@ export default function Home() {
                     <article className={styles.article}>
                         
                         <Link href="https://pareaqui.vercel.app/" 
-                        title="Aplicación fullstack de Alquiler de espacios de Estacionamiento - con React y Django" target="_blank">
+                        title={t("project10")} target="_blank">
                           <Image 
                                 src="/pare-aqui-app.jpg"
                                 fill={true}
-                                alt="Aplicación fullstack de Alquiler de Estacionamientos - con React y Django"
+                                alt={t("project10")}
                                 className={styles.img} 
                                 loading="lazy"
                           />                                                                               
-                          <h4 className={styles.h4}>Aplicación fullstack de Alquiler de Estacionamientos - con React y Django</h4>
+                          <h4 className={styles.h4}>{t("project10")}</h4>
                         </Link>
                         
 
@@ -100,114 +100,131 @@ export default function Home() {
 
                     <article className={styles.article}>
                         
-                        <Link href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/app-tareas" title="Aplicación fullstack de Tareas - con NextJS y Django" target="_blank">
+                        <Link href="https://sil-palaoro-sdyw.vercel.app/" title={t("project9")} target="_blank">
+                          <Image 
+                                src="/portfolio.jpg"
+                                fill={true}
+                                alt={t("project9")}
+                                className={styles.img} 
+                                loading="lazy"
+                          />                                                                               
+                          <h4 className={styles.h4}>{t("project9")}</h4>
+                        </Link>
+                        
+
+                    </article>
+
+
+                    <article className={styles.article}>
+                        
+                        <Link href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/app-tareas" title={t("project8")} target="_blank">
                           <Image 
                                 src="/home-app-tareas.jpg"
                                 fill={true}
-                                alt="Aplicación fullstack de Tareas - con NextJS y Django"
+                                alt={t("project8")}
                                 className={styles.img} 
                                 loading="lazy"
                           />                                                                               
-                          <h4 className={styles.h4}>Aplicación fullstack de Tareas - con NextJS y Django</h4>
+                          <h4 className={styles.h4}>{t("project8")}</h4>
                         </Link>
                         
 
                     </article>
 
                     <article className={styles.article}>
-                        <a href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/sim-movies" title="Simulador web películas y series - Kotlin" target="_blank">                        
+                        <a href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/sim-movies" title={t("project7")} target="_blank">                        
                           <Image 
                                   src="/simulador-movies-kotlin.jpg"
                                   fill={true}
-                                  alt="Simulador web películas y series - Kotlin"
+                                  alt={t("project7")}
                                   className={styles.img} 
                                   loading="lazy"
                           />                        
-                          <h4 className={styles.h4}>Simulador web películas y series - Kotlin</h4>
+                          <h4 className={styles.h4}>{t("project7")}</h4>
                         </a>
 
                     </article>
 
                     <article className={styles.article}>
-                        <a href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/turnero-farmacia" title="Turnero de Farmacia - Python" target="_blank">                        
+                        <a href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/turnero-farmacia" title={t("project6")} target="_blank">                        
                           <Image 
                                   src="/turnero-python.jpg"
                                   fill={true}
-                                  alt="Turnero de Farmacia - Python"
+                                  alt={t("project6")}
                                   className={styles.img} 
                                   loading="lazy"
                           />                        
-                          <h4 className={styles.h4}>Turnero de Farmacia - Python</h4>
+                          <h4 className={styles.h4}>{t("project6")}</h4>
                         </a>
 
                     </article>
 
                     <article className={styles.article}>
                         <a href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/ahorcado" 
-                        title="Ahorcado - Python">                        
+                        title={t("project5")}>                        
                           <Image 
                                   src="/ahorcado.jpg"
                                   fill={true}
-                                  alt="Ahorcado - Python"
+                                  alt={t("project5")}
                                   className={styles.img} 
                                   loading="lazy"
                           />                        
-                          <h4 className={styles.h4}>Ahorcado - Python</h4>
+                          <h4 className={styles.h4}>{t("project5")}</h4>
                         </a>                        
                     </article>
 
                     <article className={styles.article}>
                         <a href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/adivinador" 
-                        title="Adivina el número - Python">                        
+                        title={t("project4")}>                        
                           <Image 
                                   src="/adivina-numero.jpg"
                                   fill={true}
-                                  alt="Adivina el número - Python"
+                                  alt={t("project4")}
                                   className={styles.img} 
                                   loading="lazy"
                           />                        
-                          <h4 className={styles.h4}>Adivina el número - Python</h4>
+                          <h4 className={styles.h4}>{t("project4")}</h4>
                         </a>                        
                     </article>
 
                     <article className={styles.article}>
-                        <a href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/catalogo" title="Catalogo celulares - HTML5, Javascript y CSS">                        
+                        <a href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/catalogo" title={t("project3")}>                        
                           <Image 
                                   src="/catalogo.jpg"
                                   fill={true}
-                                  alt="Catalogo celulares - HTML5, Javascript y CSS"
+                                  alt={t("project3")}
                                   className={styles.img} 
                                   loading="lazy"
                           />                        
-                          <h4 className={styles.h4}>Catalogo celulares - HTML5, Javascript y CSS</h4>
+                          <h4 className={styles.h4}>{t("project3")}</h4>
                         </a>
 
                     </article>
 
                     <article className={styles.article}>
-                        <Link href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/formularioJS" title="Formulario y tabla - HTML5, Javascript y CSS" target="_blank">                        
+                        <Link href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/formularioJS" title={t("project2")} target="_blank">                        
                           <Image 
                                   src="/formulario.jpg"
                                   fill={true}
-                                  alt="Formulario y tabla- HTML5, Javascript y CSS"
+                                  alt={t("project2")}
                                   className={styles.img} 
                                   loading="lazy"
                           />                        
-                          <h4 className={styles.h4}>Formulario y tabla - HTML5, Javascript y CSS</h4>
+                          <h4 className={styles.h4}>{t("project2")}</h4>
                         </Link>
 
                     </article>
 
                     <article className={styles.article}>
-                        <Link href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/calculadora-js" title="Calculadora - HTML5, Javascript y CSS" target="_blank">                        
+                        <Link href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/calculadora-js" title={t("project1")} target="_blank">                        
                           <Image 
                                   src="/calculadora.jpg"
                                   fill={true}
-                                  alt="Calculadora - HTML5, Javascript y CSS"
+                                  alt={t("project1")}
                                   className={styles.img} 
                                   loading="lazy"
                           />                        
-                          <h4 className={styles.h4}>Calculadora - HTML5, Javascript y CSS</h4>
+                          <h4 className={styles.h4}>{t("project1")}</h4>
                         </Link>
 
                     </article>
@@ -231,7 +248,7 @@ export default function Home() {
                 </p>       
 
                 <p className={styles.p}><strong>                    
-                    Otros..                                      
+                    {t("tituloOthers")}                                     
                 </strong> 
                 </p> 
                 <p className={styles.p}>
@@ -239,11 +256,11 @@ export default function Home() {
                 </p>  
                 
                 <p className={styles.p}><strong>                    
-                  Idiomas                                     
+                    {t("tituloLanguages")}                                    
                 </strong> 
                 </p> 
                 <p className={styles.p}>
-                    Español (nativo) - Inglés (B2) - Portugués (básico)                  
+                    {t("languages_description")}                   
                 </p>  
             </section>
 
@@ -252,84 +269,42 @@ export default function Home() {
             <section className={styles.about} id="about">
                 <h2 className={styles.h2}>{t("tituloAbout")}</h2>
                 
-                  <p className={styles.p}>Soy <strong>idealista y curiosa</strong>. 
-                  Quiero hacer del mundo un lugar mejor a través de aplicaciones 
-                  prácticas que faciliten y mejoren la calidad de vida, la gestión 
-                  del tiempo y aporten soluciones 
-                                      a problemas cotidianos.
-                  </p>
-                                        
-                  <p className={styles.p}>Me gusta trabajar con <strong>claridad y 
-                    honestidad</strong> como pilar fundamental, siempre tratando de 
-                    mantener una actitud 
-                    positiva y pensar en <strong>soluciones</strong>, en lugar de 
-                    problemas. Me gusta hacer muchas preguntas 
-                     y estoy abierta a críticas constructivas para evolucionar y crecer. 
-                   </p>                
-                                    
-                   <p className={styles.p}>Soy <strong>
-                   dedicada y rápida para aprender
-                    </strong> con gran <strong> capacidad de 
-                    investigación autónoma</strong>. Soy curiosa 
-                    y me gusta investigar y entender con profundidad cada nuevo 
-                    tema que me encuentro, lo que me ha 
-                    llevado a explorar distintas áreas en mi vida.
-                   </p>
-                   
-                    <p className={styles.p}>    
-                    En el desarrollo de aplicaciones me gusta crear <strong>
-                        código que sea
-                        claro, eficiente y reutilizable
-                    </strong>, para <strong>optimizar tiempos y minimizar errores</strong>, 
-                    intentando usar <strong>buenas prácticas</strong>, 
-                    como el uso de comentarios que faciliten el uso a otros 
-                    programadores, y trabajar con mis compañeros para buscar las mejores 
-                    soluciones consultando diversas fuentes.
+                 <p className={styles.p}>
+                    <Trans i18nKey="about1" components={{ strong: <strong /> }} />
                 </p>
-                      
-                <p className={styles.p}>    
 
-                    El campo de la tecnología siempre me atrajo y creo que tengo 
-                    habilidad para crecer en el ámbito del desarrollo,   
-                    <strong> 
-                         disfrutando de los desafíos que se presentan en cada
-                        proyecto
-                    </strong>.
-                  </p>
+                <p className={styles.p}>
+                    <Trans i18nKey="about2" components={{ strong: <strong /> }} />
+                </p>                
+                                    
+                <p className={styles.p}>
+                    <Trans i18nKey="about3" components={{ strong: <strong /> }} />
+                </p>  
+                   
+                <p className={styles.p}>
+                    <Trans i18nKey="about4" components={{ strong: <strong /> }} />
+                </p>  
+                      
+                <p className={styles.p}>
+                    <Trans i18nKey="about5" components={{ strong: <strong /> }} />
+                </p>  
                 
-                  <p className={styles.p}>
-                    Si bien como estoy haciendo un cambio de carrera vengo de otra 
-                    rama de trabajo, tengo mucha experiencia laboral en <strong>
-                        trabajo de grupos y comunicación
-                    </strong> en un <strong>ambiente virtual</strong> mediante 
-                    la co-creación, dirección, administración y docencia de 
-                    una escuela <strong>online</strong> de partería 
-                    (<a href="http://www.parterasmayeutica.com" 
-                    className={styles.sobremi} title="Escuela Mayeutica">
-                    www.parterasmayeutica.com</a> 2017 – actualidad). 
-                    Una parte de mis tareas aquí también ha sido la 
-                    <strong> orientación y resolución de problemas técnicos</strong>.
-                    </p>
+                <p className={styles.p}>
+                <Trans
+                    i18nKey="about6"
+                    components={{
+                        strong: <strong />,
+                        a: <a href="http://www.parterasmayeutica.com" className={styles.sobremi} title="Escuela Mayeutica" target="_blank" />
+                    }} />
+                </p>                
                 
-                    <p className={styles.p}>Durante mí recorrido laboral, también
-                    he tenido experiencia en 
-                    investigación en ciencias (durante mis 4 años de estudio 
-                    en licenciatura en Química (UBA. Promedio: 8.94) y 
-                    trabajo de docencia e investigación en el área. 2001 – 
-                    2006), lo que me ha proporcionado las herramientas para 
-                    el <strong>pensamiento lógico y resolución de problemas</strong>.
-                    </p>
+                <p className={styles.p}>
+                    <Trans i18nKey="about7" components={{ strong: <strong /> }} />
+                </p>  
                 
-                    <p className={styles.p}>Sumado a esto, mis 12 años como partera autónoma 
-                    (2011 -2023), de <strong>formación autodidacta</strong>, me ha dado un 
-                    amor por el crecimiento propio y la búsqueda independiente 
-                    de información, a su vez que aprendí que <strong>
-                        trabajar en
-                        equipo y pedir ayuda oportunamente
-                    </strong> es fundamental 
-                    para mantener una mente abierta a nuevas y mejores 
-                    soluciones. 
-                </p>
+                <p className={styles.p}>
+                    <Trans i18nKey="about8" components={{ strong: <strong /> }} />
+                </p>  
                 <br/>
                 <br/>
                 <br/>
@@ -367,3 +342,97 @@ export default function Home() {
 
         // const [language, setLanguage] = useState('es');
 
+
+//</p>
+                //   {/* <p className={styles.p}>Soy <strong>idealista y curiosa</strong>. 
+                //   Quiero hacer del mundo un lugar mejor a través de aplicaciones 
+                //   prácticas que faciliten y mejoren la calidad de vida, la gestión 
+                //   del tiempo y aporten soluciones 
+                //                       a problemas cotidianos.
+                //   </p> */}
+                                        
+                //   <p className={styles.p}>Me gusta trabajar con <strong>claridad y 
+                //     honestidad</strong> como pilar fundamental, siempre tratando de 
+                //     mantener una actitud 
+                //     positiva y pensar en <strong>soluciones</strong>, en lugar de 
+                //     problemas. Me gusta hacer muchas preguntas 
+                //      y estoy abierta a críticas constructivas para evolucionar y crecer. 
+                //    </p>                
+                                    
+                //    <p className={styles.p}>Soy <strong>
+                //    dedicada y rápida para aprender
+                //     </strong> con gran <strong> capacidad de 
+                //     investigación autónoma</strong>. Soy curiosa 
+                //     y me gusta investigar y entender con profundidad cada nuevo 
+                //     tema que me encuentro, lo que me ha 
+                //     llevado a explorar distintas áreas en mi vida.
+                //    </p>
+                   
+                //     <p className={styles.p}>    
+                //     En el desarrollo de aplicaciones me gusta crear <strong>
+                //         código que sea
+                //         claro, eficiente y reutilizable
+                //     </strong>, para <strong>optimizar tiempos y minimizar errores</strong>, 
+                //     intentando usar <strong>buenas prácticas</strong>, 
+                //     como el uso de comentarios que faciliten el uso a otros 
+                //     programadores, y trabajar con mis compañeros para buscar las mejores 
+                //     soluciones consultando diversas fuentes.
+                // </p>
+                      
+                // <p className={styles.p}>    
+
+                //     El campo de la tecnología siempre me atrajo y creo que tengo 
+                //     habilidad para crecer en el ámbito del desarrollo,   
+                //     <strong> 
+                //          disfrutando de los desafíos que se presentan en cada
+                //         proyecto
+                //     </strong>.
+                //   </p>
+                
+                //   <p className={styles.p}>
+                //     Si bien como estoy haciendo un cambio de carrera vengo de otra 
+                //     rama de trabajo, tengo mucha experiencia laboral en <strong>
+                //         trabajo de grupos y comunicación
+                //     </strong> en un <strong>ambiente virtual</strong> mediante 
+                //     la co-creación, dirección, administración y docencia de 
+                //     una escuela <strong>online</strong> de partería 
+                //     (<a href="http://www.parterasmayeutica.com" 
+                //     className={styles.sobremi} title="Escuela Mayeutica">
+                //     www.parterasmayeutica.com</a> 2017 – actualidad). 
+                //     Una parte de mis tareas aquí también ha sido la 
+                //     <strong> orientación y resolución de problemas técnicos</strong>.
+                //     </p>
+                
+                //     <p className={styles.p}>Durante mí recorrido laboral, también
+                //     he tenido experiencia en 
+                //     investigación en ciencias (durante mis 4 años de estudio 
+                //     en licenciatura en Química (UBA. Promedio: 8.94) y 
+                //     trabajo de docencia e investigación en el área. 2001 – 
+                //     2006), lo que me ha proporcionado las herramientas para 
+                //     el <strong>pensamiento lógico y resolución de problemas</strong>.
+                //     </p>
+                
+                //     <p className={styles.p}>Sumado a esto, mis 12 años como partera autónoma 
+                //     (2011 -2023), de <strong>formación autodidacta</strong>, me ha dado un 
+                //     amor por el crecimiento propio y la búsqueda independiente 
+                //     de información, a su vez que aprendí que <strong>
+                //         trabajar en
+                //         equipo y pedir ayuda oportunamente
+                //     </strong> es fundamental 
+                //     para mantener una mente abierta a nuevas y mejores 
+                //     soluciones. 
+                // </p>
+
+                // <p className={styles.p}>
+                //     Si bien como estoy haciendo un cambio de carrera vengo de otra 
+                //     rama de trabajo, tengo mucha experiencia laboral en <strong>
+                //         trabajo de grupos y comunicación
+                //     </strong> en un <strong>ambiente virtual</strong> mediante 
+                //     la co-creación, dirección, administración y docencia de 
+                //     una escuela <strong>online</strong> de partería 
+                //     (<a href="http://www.parterasmayeutica.com" 
+                //     className={styles.sobremi} title="Escuela Mayeutica">
+                //     www.parterasmayeutica.com</a> 2017 – actualidad). 
+                //     Una parte de mis tareas aquí también ha sido la 
+                //     <strong> orientación y resolución de problemas técnicos</strong>.
+                //     </p>
