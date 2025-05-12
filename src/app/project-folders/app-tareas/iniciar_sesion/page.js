@@ -1,7 +1,7 @@
 /*Página de Login*/
 
 "use client";
-import styles from "../../../styles/page.module.css";
+import styles from "../../../../styles/page.module.css";
 import { useState } from 'react';
 import axios from 'axios';
 

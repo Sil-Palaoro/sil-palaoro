@@ -1,7 +1,7 @@
 /*Layout de la App con metadata, head (favicon, fuentes), y ubicación de los componentes de la 
 Barra de Navegación y Footer */
 
-import BarraNavAppTareas from "@/app/[locale]/components/BarraNavAppTareas";
+import BarraNavAppTareas from "@/app/components/BarraNavAppTareas";
 import Head from "next/head";
 
 

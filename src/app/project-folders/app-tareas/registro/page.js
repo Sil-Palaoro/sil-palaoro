@@ -1,7 +1,7 @@
 /*Página de registro de usuario*/
 "use client";
 import { useState } from "react";
-import styles from "../../../styles/page.module.css";
+import styles from "../../../../styles/page.module.css";
 import axios from 'axios';
 
 function Registro() {
