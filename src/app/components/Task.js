@@ -4,7 +4,7 @@ import React from "react";
 import { AiFillEdit } from "react-icons/ai";
 import { BsFillTrash2Fill } from "react-icons/bs";
 import { RiRadioButtonFill } from "react-icons/ri";
-import styles from "../styles/Task.module.css";
+import styles from "../../styles/Task.module.css";
 import { useRouter } from 'next/navigation';
 import {useState, useEffect}  from "react";
 import axios from 'axios';

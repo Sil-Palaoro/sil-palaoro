@@ -1,7 +1,7 @@
 //Componente Para editar y guardar cambios en la tarea
 "use client";
 import {useState, useEffect} from 'react';
-import styles from '../styles/TaskForm.module.css';
+import styles from '../../styles/TaskForm.module.css';
 import { useRouter } from 'next/navigation';
 import axios from 'axios';
 

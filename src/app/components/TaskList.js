@@ -4,7 +4,7 @@
 import TaskForm from "./TaskForm";
 import Task from "./Task";
 import EditTaskForm from "./EditTaskForm";
-import styles from "../styles/TaskList.module.css";
+import styles from "../../styles/TaskList.module.css";
 import { AiFillEdit } from "react-icons/ai";
 import { BsFillTrash2Fill } from "react-icons/bs";
 import { RiRadioButtonFill } from "react-icons/ri";

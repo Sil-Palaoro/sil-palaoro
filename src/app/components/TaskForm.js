@@ -1,7 +1,7 @@
 //Componente del formulario para armar cada tarea
 "use client"
 import {useEffect, useState}  from "react";
-import styles from '../styles/TaskForm.module.css';
+import styles from '../../styles/TaskForm.module.css';
 import { useRouter } from 'next/navigation';
 import axios from 'axios';
 
