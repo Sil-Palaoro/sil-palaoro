@@ -1,6 +1,6 @@
 /*Trabajo Final - Argentina Programa 4.0 - Grupo Code Hunters*/
 
-import styles from "../../styles/page.module.css";
+import styles from "../../../styles/page.module.css";
 
 /*Página principal*/
 
