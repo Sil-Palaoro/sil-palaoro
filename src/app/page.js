@@ -50,15 +50,15 @@ export default function Home() {
                         {/* "Aplicación fullstack de Blog social - React, Next.js y Firebase" */}
 
                         <Link href="https://react-blog-silvipalaoro.web.app/" 
-                        title={t("project12")} target="_blank">
+                        title={t("project13")} target="_blank">
                           <Image 
                                 src="/Blog-app.jpg"
                                 fill={true}
-                                alt={t("project12")}
+                                alt={t("project13")}
                                 className={styles.img} 
                                 loading="lazy"
                           />                                                                               
-                          <h4 className={styles.h4}>{t("project12")}</h4>
+                          <h4 className={styles.h4}>{t("project13")}</h4>
                         </Link>
                         
 
@@ -69,9 +69,27 @@ export default function Home() {
                         {/* "Página web e implementación formulario y botón de Whatsapp - React", */}
 
                         <Link href="https://parterasmayeutica.com/doulas" 
-                        title={t("project11")} target="_blank">
+                        title={t("project12")} target="_blank">
                           <Image 
                                 src="/pag-doulas.jpg"
+                                fill={true}
+                                alt={t("project12")}
+                                className={styles.img} 
+                                loading="lazy"
+                          />                                                                               
+                          <h4 className={styles.h4}>{t("project12")}</h4>
+                        </Link>
+                        
+
+                    </article>
+
+                    <article className={styles.article}>
+                        {/*"Aplicación fullstack de Alquiler de Estacionamientos - React, Django y Vercel", */}
+
+                        <Link href="https://pareaqui.vercel.app/" 
+                        title={t("project11")} target="_blank">
+                          <Image 
+                                src="/pare-aqui-app.jpg"
                                 fill={true}
                                 alt={t("project11")}
                                 className={styles.img} 
@@ -84,12 +102,12 @@ export default function Home() {
                     </article>
 
                     <article className={styles.article}>
-                        {/*"Aplicación fullstack de Alquiler de Estacionamientos - React, Django y Vercel", */}
+                        {/*"Desarrollo de API de mensajería interna en app Inmobiliaria - Django REST Framework y PostgreSQL" */}
 
-                        <Link href="https://pareaqui.vercel.app/" 
+                        <Link href="https://github.com/mikelm2020/rentopia/tree/main/apps/messaging" 
                         title={t("project10")} target="_blank">
                           <Image 
-                                src="/pare-aqui-app.jpg"
+                                src="/mensajeria-rentopia.jpg"
                                 fill={true}
                                 alt={t("project10")}
                                 className={styles.img} 
