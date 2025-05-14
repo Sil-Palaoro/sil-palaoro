@@ -274,7 +274,8 @@ export default function Home() {
                     Backend</strong> 
                 </p> 
                 <p className={styles.p}>
-                    Python - Django REST Framework - Node.js - SQL (SQLite y PostgreSQL) - Firebase (Cloud Firestore)
+                    Python - Django REST Framework Django Channels and Websockets - Node.js - SQL (SQLite y PostgreSQL) 
+                    - Postman - DBeaver - Firebase (Cloud Firestore) - Vercel - Firebase (Hosting)
                 </p> 
                 <p className={styles.p}><strong>                    
                     Frontend                                      
@@ -289,7 +290,7 @@ export default function Home() {
                 </strong> 
                 </p> 
                 <p className={styles.p}>
-                    Git (GitHub y GitLab) - Vercel - Firebase (Hosting) - Trello                  
+                    Git (GitHub y GitLab) - Trello                  
                 </p>  
                 
                 <p className={styles.p}><strong>                    
