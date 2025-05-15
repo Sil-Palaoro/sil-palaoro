@@ -140,7 +140,7 @@ export default function Home() {
                     <article className={styles.article}>
                         {/*"Aplicación fullstack de Tareas - NextJS, Django y SQLite", */}
 
-                        <Link href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/app-tareas" title={t("project8")} target="_blank">
+                        <Link href="https://github.com/Sil-Palaoro/sgp-tasks-app" title={t("project8")} target="_blank">
                           <Image 
                                 src="/home-app-tareas.jpg"
                                 fill={true}
@@ -157,7 +157,7 @@ export default function Home() {
                     <article className={styles.article}>
                         {/*"Simulador web películas y series - Kotlin"*/}
 
-                        <Link href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/sim-movies" title={t("project7")} target="_blank">                        
+                        <Link href="https://github.com/Sil-Palaoro/courses-projects/tree/main/sim-movies" title={t("project7")} target="_blank">                        
                           <Image 
                                   src="/simulador-movies-kotlin.jpg"
                                   fill={true}
@@ -173,7 +173,7 @@ export default function Home() {
                     <article className={styles.article}>
                         {/*"Turnero de Farmacia - Python"*/}
 
-                        <Link href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/turnero-farmacia" title={t("project6")} target="_blank">                        
+                        <Link href="https://github.com/Sil-Palaoro/courses-projects/tree/main/turnero-farmacia" title={t("project6")} target="_blank">                        
                           <Image 
                                   src="/turnero-python.jpg"
                                   fill={true}
@@ -189,8 +189,8 @@ export default function Home() {
                     <article className={styles.article}>
                         {/*"Ahorcado - Python"*/}
 
-                        <Link href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/ahorcado" 
-                        title={t("project5")}>                        
+                        <Link href="https://github.com/Sil-Palaoro/courses-projects/tree/main/ahorcado" 
+                        title={t("project5")} target="_blank">                        
                           <Image 
                                   src="/ahorcado.jpg"
                                   fill={true}
@@ -205,8 +205,8 @@ export default function Home() {
                     <article className={styles.article}>
                         {/*"Adivina el número - Python"*/}
 
-                        <Link href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/adivinador" 
-                        title={t("project4")}>                        
+                        <Link href="https://github.com/Sil-Palaoro/courses-projects/tree/main/adivinador" 
+                        title={t("project4")} target="_blank">                        
                           <Image 
                                   src="/adivina-numero.jpg"
                                   fill={true}
@@ -221,7 +221,7 @@ export default function Home() {
                     <article className={styles.article}>
                         {/*"Catalogo de productos - HTML5, Javascript y CSS", */}
 
-                        <Link href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/catalogo" title={t("project3")}>                        
+                        <Link href="https://github.com/Sil-Palaoro/courses-projects/tree/main/catalogo" title={t("project3")} target="_blank">                        
                           <Image 
                                   src="/catalogo.jpg"
                                   fill={true}
@@ -237,7 +237,7 @@ export default function Home() {
                     <article className={styles.article}>
                         {/*"Formulario y tabla - HTML5, Javascript y CSS"*/}
 
-                        <Link href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/formularioJS" title={t("project2")} target="_blank">                        
+                        <Link href="https://github.com/Sil-Palaoro/courses-projects/tree/main/formularioJS" title={t("project2")} target="_blank">                        
                           <Image 
                                   src="/formulario.jpg"
                                   fill={true}
@@ -253,7 +253,7 @@ export default function Home() {
                     <article className={styles.article}>
                         {/* "Calculadora - HTML5, Javascript y CSS"*/}
 
-                        <Link href="https://github.com/Sil-Palaoro/sil-palaoro/tree/main/src/app/calculadora-js" title={t("project1")} target="_blank">                        
+                        <Link href="https://github.com/Sil-Palaoro/courses-projects/tree/main/calculadora-js" title={t("project1")} target="_blank">                        
                           <Image 
                                   src="/calculadora.jpg"
                                   fill={true}
