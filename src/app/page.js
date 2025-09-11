@@ -229,7 +229,7 @@ export default function Home() {
                     Backend</strong> 
                 </p> 
                 <p className={styles.p}>
-                    Python - Django REST Framework - Django Channels and Websockets - Node.js - SQL (SQLite, PostgreSQL) 
+                    Python - Django REST Framework - Selenium web scraping - Django Channels and Websockets - Node.js - SQL (SQLite, PostgreSQL) 
                     - Postman - DBeaver - Firebase (Cloud Firestore) - Vercel - Firebase (Hosting)
                 </p> 
                 <p className={styles.p}><strong>                    
@@ -237,7 +237,7 @@ export default function Home() {
                 </strong> 
                 </p> 
                 <p className={styles.p}>
-                React.js - Next.js - {t("i18n")} - JavaScript - HTML5 - CSS                 
+                React.js - Next.js - {t("i18n")} - Typescript - JavaScript - HTML5 - CSS                 
                 </p>       
 
                 <p className={styles.p}><strong>                    
@@ -245,7 +245,7 @@ export default function Home() {
                 </strong> 
                 </p> 
                 <p className={styles.p}>
-                    Git (GitHub y GitLab) - Trello                  
+                    Git (GitHub y GitLab) - Trello - TDD                 
                 </p>  
                 
                 <p className={styles.p}><strong>                    
