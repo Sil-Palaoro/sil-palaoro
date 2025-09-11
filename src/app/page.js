@@ -47,6 +47,54 @@ export default function Home() {
                 <div className={styles.grid}>
 
                 <article className={styles.article}>
+                        {/* "Agente de registro de pagos asistido por IA - Python" */}
+
+                        <Link href="https://github.com/Sil-Palaoro/AI-assisted-payment-registry" 
+                        title={t("project17")} target="_blank">
+                          <Image 
+                                src="/ai-assisted-payment-registry.jpg"
+                                fill={true}
+                                alt={t("project17")}
+                                className={styles.img} 
+                                loading="lazy"
+                          />                                                                               
+                          <h4 className={styles.h4}>{t("project17")}</h4>
+                        </Link>
+                </article>
+
+                <article className={styles.article}>
+                        {/* "Automatización de tareas con Selenium - Python" */}
+
+                        <Link href="https://github.com/Sil-Palaoro/New-study-group-automation" 
+                        title={t("project16")} target="_blank">
+                          <Image 
+                                src="/selenium-task-automation.jpg"
+                                fill={true}
+                                alt={t("project16")}
+                                className={styles.img} 
+                                loading="lazy"
+                          />                                                                               
+                          <h4 className={styles.h4}>{t("project16")}</h4>
+                        </Link>
+                </article>
+
+                <article className={styles.article}>
+                        {/* "Carousel de imágenes y testimonios. Actualización de Homepage - React" */}
+
+                        <Link href="https://parterasmayeutica.com/" 
+                        title={t("project15")} target="_blank">
+                          <Image 
+                                src="/home-mayeutica.jpg"
+                                fill={true}
+                                alt={t("project15")}
+                                className={styles.img} 
+                                loading="lazy"
+                          />                                                                               
+                          <h4 className={styles.h4}>{t("project15")}</h4>
+                        </Link>
+                </article>
+
+                <article className={styles.article}>
                         {/* "Aplicación fullstack de Blog social - React, Next.js y Firebase" */}
 
                         <Link href="https://react-blog-silvipalaoro.web.app/" 
@@ -152,119 +200,26 @@ export default function Home() {
                         </Link>
                         
 
-                    </article>
+                    </article>            
 
-                    <article className={styles.article}>
-                        {/*"Simulador web películas y series - Kotlin"*/}
+                     <article className={styles.article}>
+                        {/*"Proyectos básicos de cursos - HTML5, Javascript, CSS, Python, Kotlin"*/}
 
-                        <Link href="https://github.com/Sil-Palaoro/courses-projects/tree/main/sim-movies" title={t("project7")} target="_blank">                        
+                        <Link href="https://github.com/Sil-Palaoro/courses-projects/" title={t("project14")} target="_blank">                        
                           <Image 
-                                  src="/simulador-movies-kotlin.jpg"
+                                  src="/courses-projects.jpg"
                                   fill={true}
-                                  alt={t("project7")}
+                                  alt={t("project14")}
                                   className={styles.img} 
                                   loading="lazy"
                           />                        
-                          <h4 className={styles.h4}>{t("project7")}</h4>
+                          <h4 className={styles.h4}>{t("project14")}</h4>
                         </Link>
 
-                    </article>
+                    </article>        
 
-                    <article className={styles.article}>
-                        {/*"Turnero de Farmacia - Python"*/}
-
-                        <Link href="https://github.com/Sil-Palaoro/courses-projects/tree/main/turnero-farmacia" title={t("project6")} target="_blank">                        
-                          <Image 
-                                  src="/turnero-python.jpg"
-                                  fill={true}
-                                  alt={t("project6")}
-                                  className={styles.img} 
-                                  loading="lazy"
-                          />                        
-                          <h4 className={styles.h4}>{t("project6")}</h4>
-                        </Link>
-
-                    </article>
-
-                    <article className={styles.article}>
-                        {/*"Ahorcado - Python"*/}
-
-                        <Link href="https://github.com/Sil-Palaoro/courses-projects/tree/main/ahorcado" 
-                        title={t("project5")} target="_blank">                        
-                          <Image 
-                                  src="/ahorcado.jpg"
-                                  fill={true}
-                                  alt={t("project5")}
-                                  className={styles.img} 
-                                  loading="lazy"
-                          />                        
-                          <h4 className={styles.h4}>{t("project5")}</h4>
-                        </Link>                        
-                    </article>
-
-                    <article className={styles.article}>
-                        {/*"Adivina el número - Python"*/}
-
-                        <Link href="https://github.com/Sil-Palaoro/courses-projects/tree/main/adivinador" 
-                        title={t("project4")} target="_blank">                        
-                          <Image 
-                                  src="/adivina-numero.jpg"
-                                  fill={true}
-                                  alt={t("project4")}
-                                  className={styles.img} 
-                                  loading="lazy"
-                          />                        
-                          <h4 className={styles.h4}>{t("project4")}</h4>
-                        </Link>                        
-                    </article>
-
-                    <article className={styles.article}>
-                        {/*"Catalogo de productos - HTML5, Javascript y CSS", */}
-
-                        <Link href="https://github.com/Sil-Palaoro/courses-projects/tree/main/catalogo" title={t("project3")} target="_blank">                        
-                          <Image 
-                                  src="/catalogo.jpg"
-                                  fill={true}
-                                  alt={t("project3")}
-                                  className={styles.img} 
-                                  loading="lazy"
-                          />                        
-                          <h4 className={styles.h4}>{t("project3")}</h4>
-                        </Link>
-
-                    </article>
-
-                    <article className={styles.article}>
-                        {/*"Formulario y tabla - HTML5, Javascript y CSS"*/}
-
-                        <Link href="https://github.com/Sil-Palaoro/courses-projects/tree/main/formularioJS" title={t("project2")} target="_blank">                        
-                          <Image 
-                                  src="/formulario.jpg"
-                                  fill={true}
-                                  alt={t("project2")}
-                                  className={styles.img} 
-                                  loading="lazy"
-                          />                        
-                          <h4 className={styles.h4}>{t("project2")}</h4>
-                        </Link>
-
-                    </article>
-
-                    <article className={styles.article}>
-                        {/* "Calculadora - HTML5, Javascript y CSS"*/}
-
-                        <Link href="https://github.com/Sil-Palaoro/courses-projects/tree/main/calculadora-js" title={t("project1")} target="_blank">                        
-                          <Image 
-                                  src="/calculadora.jpg"
-                                  fill={true}
-                                  alt={t("project1")}
-                                  className={styles.img} 
-                                  loading="lazy"
-                          />                        
-                          <h4 className={styles.h4}>{t("project1")}</h4>
-                        </Link>
-
-                    </article>
+                    
+                                     
                     
                 </div>
             </section>
@@ -368,18 +323,6 @@ export default function Home() {
   );
 }
 
-// import { useLanguage } from '../../../context/LanguageContext';
-// import en from '../../../public/locales (quitar)/en';
-// import es from '../../../public/locales (quitar)/es';
-
-
-// const { locale } = useRouter(); // Get the current locale
-    // const pathname = usePathname(); // Get the current path
-    // const { language } = useLanguage();
-    // const t = language === 'en' ? en : es;
-
-        // const [language, setLanguage] = useState('es');
-
 
 //</p>
                 //   {/* <p className={styles.p}>Soy <strong>idealista y curiosa</strong>. 
@@ -474,3 +417,118 @@ export default function Home() {
                 //     Una parte de mis tareas aquí también ha sido la 
                 //     <strong> orientación y resolución de problemas técnicos</strong>.
                 //     </p>
+
+//Kotlin
+// <article className={styles.article}>
+//                         {/*"Simulador web películas y series - Kotlin"*/}
+
+//                         <Link href="https://github.com/Sil-Palaoro/courses-projects/tree/main/sim-movies" title={t("project7")} target="_blank">                        
+//                           <Image 
+//                                   src="/simulador-movies-kotlin.jpg"
+//                                   fill={true}
+//                                   alt={t("project7")}
+//                                   className={styles.img} 
+//                                   loading="lazy"
+//                           />                        
+//                           <h4 className={styles.h4}>{t("project7")}</h4>
+//                         </Link>
+
+//                     </article>
+
+//Python muy básico
+/*<article className={styles.article}>
+                        {/*"Turnero de Farmacia - Python"
+
+                        <Link href="https://github.com/Sil-Palaoro/courses-projects/tree/main/turnero-farmacia" title={t("project6")} target="_blank">                        
+                          <Image 
+                                  src="/turnero-python.jpg"
+                                  fill={true}
+                                  alt={t("project6")}
+                                  className={styles.img} 
+                                  loading="lazy"
+                          />                        
+                          <h4 className={styles.h4}>{t("project6")}</h4>
+                        </Link>
+
+                    </article>
+
+                    <article className={styles.article}>
+                        "Ahorcado - Python"
+
+                        <Link href="https://github.com/Sil-Palaoro/courses-projects/tree/main/ahorcado" 
+                        title={t("project5")} target="_blank">                        
+                          <Image 
+                                  src="/ahorcado.jpg"
+                                  fill={true}
+                                  alt={t("project5")}
+                                  className={styles.img} 
+                                  loading="lazy"
+                          />                        
+                          <h4 className={styles.h4}>{t("project5")}</h4>
+                        </Link>                        
+                    </article>
+
+                    <article className={styles.article}>
+                        "Adivina el número - Python"
+
+                        <Link href="https://github.com/Sil-Palaoro/courses-projects/tree/main/adivinador" 
+                        title={t("project4")} target="_blank">                        
+                          <Image 
+                                  src="/adivina-numero.jpg"
+                                  fill={true}
+                                  alt={t("project4")}
+                                  className={styles.img} 
+                                  loading="lazy"
+                          />                        
+                          <h4 className={styles.h4}>{t("project4")}</h4>
+                        </Link>                        
+                    </article>
+
+                    <article className={styles.article}>
+                        {/* "Calculadora - HTML5, Javascript y CSS"
+
+                        <Link href="https://github.com/Sil-Palaoro/courses-projects/tree/main/calculadora-js" title={t("project1")} target="_blank">                        
+                          <Image 
+                                  src="/calculadora.jpg"
+                                  fill={true}
+                                  alt={t("project1")}
+                                  className={styles.img} 
+                                  loading="lazy"
+                          />                        
+                          <h4 className={styles.h4}>{t("project1")}</h4>
+                        </Link>
+
+                    </article>
+
+                       <article className={styles.article}>
+                        {/*"Catalogo de productos - HTML5, Javascript y CSS", 
+
+                        <Link href="https://github.com/Sil-Palaoro/courses-projects/tree/main/catalogo" title={t("project3")} target="_blank">                        
+                          <Image 
+                                  src="/catalogo.jpg"
+                                  fill={true}
+                                  alt={t("project3")}
+                                  className={styles.img} 
+                                  loading="lazy"
+                          />                        
+                          <h4 className={styles.h4}>{t("project3")}</h4>
+                        </Link>
+
+                    </article>
+
+                    <article className={styles.article}>
+                        {/*"Formulario y tabla - HTML5, Javascript y CSS"
+
+                        <Link href="https://github.com/Sil-Palaoro/courses-projects/tree/main/formularioJS" title={t("project2")} target="_blank">                        
+                          <Image 
+                                  src="/formulario.jpg"
+                                  fill={true}
+                                  alt={t("project2")}
+                                  className={styles.img} 
+                                  loading="lazy"
+                          />                        
+                          <h4 className={styles.h4}>{t("project2")}</h4>
+                        </Link>
+
+                    </article>
+*/

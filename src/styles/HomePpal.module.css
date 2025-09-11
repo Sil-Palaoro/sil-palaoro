@@ -375,7 +375,7 @@
 
   .projects .h2{
     margin: 0;
-    padding: 0;
+    padding: 0 0 20px;
     border: 0;
     box-sizing: border-box;
     vertical-align: baseline;
@@ -510,7 +510,7 @@
   }
 
   .languajes .h2{
-    padding: 0;
+    padding: 0 0 20px;
     border: 0;
     box-sizing: border-box;
     vertical-align: baseline;
