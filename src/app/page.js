@@ -245,8 +245,8 @@ export default function Home() {
                     Backend</strong> 
                 </p> 
                 <p className={styles.p}>
-                    Python - Django REST Framework - Selenium web scraping - Django Channels and Websockets - Node.js - SQL (SQLite, PostgreSQL)  
-                    - Express.js - Prisma - Postman - DBeaver - Firebase (Cloud Firestore) - Vercel - Firebase (Hosting) - Docker & Docker compose
+                    Node.js - Python - Django REST Framework - Selenium web scraping - Django Channels and Websockets - SQL (SQLite, PostgreSQL)  
+                    - Express.js - Prisma - Postman - Firebase (Cloud Firestore) - Vercel - Firebase (Hosting) - Docker & Docker compose
                 </p> 
                 <p className={styles.p}><strong>                    
                     Frontend                                      
@@ -261,7 +261,7 @@ export default function Home() {
                 </strong> 
                 </p> 
                 <p className={styles.p}>
-                    Git (GitHub y GitLab) - Trello - TDD - Clean Architecture              
+                    Git (GitHub y GitLab) - Trello - Swagger - Vitest - TDD - Clean Architecture              
                 </p>  
                 
                 <p className={styles.p}><strong>                    
