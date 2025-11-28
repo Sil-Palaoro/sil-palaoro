@@ -413,11 +413,11 @@
     box-sizing: border-box;
     vertical-align: baseline;
     width: 90%;
-    max-width: 40em;
+    max-width: 80%;
     margin: 1em 0;  
     display: grid;
-    grid-template-columns: repeat( auto-fit , minmax( 15rem , 1fr) );
-    gap:1em;
+    grid-template-columns: repeat( auto-fit , minmax( 30rem , 1fr) );
+    gap: 1em;
   }
 
   .projects .article{
