@@ -46,6 +46,22 @@ export default function Home() {
               
                 <div className={styles.grid}>
 
+ <article className={styles.article}>
+                        {/* "Agente de registro de pagos asistido por IA - Python" */}
+
+                        <Link href="https://github.com/Sil-Palaoro/devcourses-store" 
+                        title={t("project18")} target="_blank">
+                          <Image 
+                                src="/home-devcourses.png"
+                                fill={true}
+                                alt={t("project18")}
+                                className={styles.img} 
+                                loading="lazy"
+                          />                                                                               
+                          <h4 className={styles.h4}>{t("project18")}</h4>
+                        </Link>
+                </article>
+
                 <article className={styles.article}>
                         {/* "Agente de registro de pagos asistido por IA - Python" */}
 
@@ -229,15 +245,15 @@ export default function Home() {
                     Backend</strong> 
                 </p> 
                 <p className={styles.p}>
-                    Python - Django REST Framework - Selenium web scraping - Django Channels and Websockets - Node.js - SQL (SQLite, PostgreSQL) 
-                    - Postman - DBeaver - Firebase (Cloud Firestore) - Vercel - Firebase (Hosting)
+                    Python - Django REST Framework - Selenium web scraping - Django Channels and Websockets - Node.js - SQL (SQLite, PostgreSQL)  
+                    - Express.js - Prisma - Postman - DBeaver - Firebase (Cloud Firestore) - Vercel - Firebase (Hosting) - Docker & Docker compose
                 </p> 
                 <p className={styles.p}><strong>                    
                     Frontend                                      
                 </strong> 
                 </p> 
                 <p className={styles.p}>
-                React.js - Next.js - {t("i18n")} - Typescript - JavaScript - HTML5 - CSS                 
+                React.js - Next.js - {t("i18n")} - Typescript - JavaScript - Storybook (VTDD) - HTML5 - CSS                 
                 </p>       
 
                 <p className={styles.p}><strong>                    
@@ -245,7 +261,7 @@ export default function Home() {
                 </strong> 
                 </p> 
                 <p className={styles.p}>
-                    Git (GitHub y GitLab) - Trello - TDD                 
+                    Git (GitHub y GitLab) - Trello - TDD - Clean Architecture              
                 </p>  
                 
                 <p className={styles.p}><strong>                    
@@ -322,213 +338,3 @@ export default function Home() {
         </main> 
   );
 }
-
-
-//</p>
-                //   {/* <p className={styles.p}>Soy <strong>idealista y curiosa</strong>. 
-                //   Quiero hacer del mundo un lugar mejor a través de aplicaciones 
-                //   prácticas que faciliten y mejoren la calidad de vida, la gestión 
-                //   del tiempo y aporten soluciones 
-                //                       a problemas cotidianos.
-                //   </p> */}
-                                        
-                //   <p className={styles.p}>Me gusta trabajar con <strong>claridad y 
-                //     honestidad</strong> como pilar fundamental, siempre tratando de 
-                //     mantener una actitud 
-                //     positiva y pensar en <strong>soluciones</strong>, en lugar de 
-                //     problemas. Me gusta hacer muchas preguntas 
-                //      y estoy abierta a críticas constructivas para evolucionar y crecer. 
-                //    </p>                
-                                    
-                //    <p className={styles.p}>Soy <strong>
-                //    dedicada y rápida para aprender
-                //     </strong> con gran <strong> capacidad de 
-                //     investigación autónoma</strong>. Soy curiosa 
-                //     y me gusta investigar y entender con profundidad cada nuevo 
-                //     tema que me encuentro, lo que me ha 
-                //     llevado a explorar distintas áreas en mi vida.
-                //    </p>
-                   
-                //     <p className={styles.p}>    
-                //     En el desarrollo de aplicaciones me gusta crear <strong>
-                //         código que sea
-                //         claro, eficiente y reutilizable
-                //     </strong>, para <strong>optimizar tiempos y minimizar errores</strong>, 
-                //     intentando usar <strong>buenas prácticas</strong>, 
-                //     como el uso de comentarios que faciliten el uso a otros 
-                //     programadores, y trabajar con mis compañeros para buscar las mejores 
-                //     soluciones consultando diversas fuentes.
-                // </p>
-                      
-                // <p className={styles.p}>    
-
-                //     El campo de la tecnología siempre me atrajo y creo que tengo 
-                //     habilidad para crecer en el ámbito del desarrollo,   
-                //     <strong> 
-                //          disfrutando de los desafíos que se presentan en cada
-                //         proyecto
-                //     </strong>.
-                //   </p>
-                
-                //   <p className={styles.p}>
-                //     Si bien como estoy haciendo un cambio de carrera vengo de otra 
-                //     rama de trabajo, tengo mucha experiencia laboral en <strong>
-                //         trabajo de grupos y comunicación
-                //     </strong> en un <strong>ambiente virtual</strong> mediante 
-                //     la co-creación, dirección, administración y docencia de 
-                //     una escuela <strong>online</strong> de partería 
-                //     (<a href="http://www.parterasmayeutica.com" 
-                //     className={styles.sobremi} title="Escuela Mayeutica">
-                //     www.parterasmayeutica.com</a> 2017 – actualidad). 
-                //     Una parte de mis tareas aquí también ha sido la 
-                //     <strong> orientación y resolución de problemas técnicos</strong>.
-                //     </p>
-                
-                //     <p className={styles.p}>Durante mí recorrido laboral, también
-                //     he tenido experiencia en 
-                //     investigación en ciencias (durante mis 4 años de estudio 
-                //     en licenciatura en Química (UBA. Promedio: 8.94) y 
-                //     trabajo de docencia e investigación en el área. 2001 – 
-                //     2006), lo que me ha proporcionado las herramientas para 
-                //     el <strong>pensamiento lógico y resolución de problemas</strong>.
-                //     </p>
-                
-                //     <p className={styles.p}>Sumado a esto, mis 12 años como partera autónoma 
-                //     (2011 -2023), de <strong>formación autodidacta</strong>, me ha dado un 
-                //     amor por el crecimiento propio y la búsqueda independiente 
-                //     de información, a su vez que aprendí que <strong>
-                //         trabajar en
-                //         equipo y pedir ayuda oportunamente
-                //     </strong> es fundamental 
-                //     para mantener una mente abierta a nuevas y mejores 
-                //     soluciones. 
-                // </p>
-
-                // <p className={styles.p}>
-                //     Si bien como estoy haciendo un cambio de carrera vengo de otra 
-                //     rama de trabajo, tengo mucha experiencia laboral en <strong>
-                //         trabajo de grupos y comunicación
-                //     </strong> en un <strong>ambiente virtual</strong> mediante 
-                //     la co-creación, dirección, administración y docencia de 
-                //     una escuela <strong>online</strong> de partería 
-                //     (<a href="http://www.parterasmayeutica.com" 
-                //     className={styles.sobremi} title="Escuela Mayeutica">
-                //     www.parterasmayeutica.com</a> 2017 – actualidad). 
-                //     Una parte de mis tareas aquí también ha sido la 
-                //     <strong> orientación y resolución de problemas técnicos</strong>.
-                //     </p>
-
-//Kotlin
-// <article className={styles.article}>
-//                         {/*"Simulador web películas y series - Kotlin"*/}
-
-//                         <Link href="https://github.com/Sil-Palaoro/courses-projects/tree/main/sim-movies" title={t("project7")} target="_blank">                        
-//                           <Image 
-//                                   src="/simulador-movies-kotlin.jpg"
-//                                   fill={true}
-//                                   alt={t("project7")}
-//                                   className={styles.img} 
-//                                   loading="lazy"
-//                           />                        
-//                           <h4 className={styles.h4}>{t("project7")}</h4>
-//                         </Link>
-
-//                     </article>
-
-//Python muy básico
-/*<article className={styles.article}>
-                        {/*"Turnero de Farmacia - Python"
-
-                        <Link href="https://github.com/Sil-Palaoro/courses-projects/tree/main/turnero-farmacia" title={t("project6")} target="_blank">                        
-                          <Image 
-                                  src="/turnero-python.jpg"
-                                  fill={true}
-                                  alt={t("project6")}
-                                  className={styles.img} 
-                                  loading="lazy"
-                          />                        
-                          <h4 className={styles.h4}>{t("project6")}</h4>
-                        </Link>
-
-                    </article>
-
-                    <article className={styles.article}>
-                        "Ahorcado - Python"
-
-                        <Link href="https://github.com/Sil-Palaoro/courses-projects/tree/main/ahorcado" 
-                        title={t("project5")} target="_blank">                        
-                          <Image 
-                                  src="/ahorcado.jpg"
-                                  fill={true}
-                                  alt={t("project5")}
-                                  className={styles.img} 
-                                  loading="lazy"
-                          />                        
-                          <h4 className={styles.h4}>{t("project5")}</h4>
-                        </Link>                        
-                    </article>
-
-                    <article className={styles.article}>
-                        "Adivina el número - Python"
-
-                        <Link href="https://github.com/Sil-Palaoro/courses-projects/tree/main/adivinador" 
-                        title={t("project4")} target="_blank">                        
-                          <Image 
-                                  src="/adivina-numero.jpg"
-                                  fill={true}
-                                  alt={t("project4")}
-                                  className={styles.img} 
-                                  loading="lazy"
-                          />                        
-                          <h4 className={styles.h4}>{t("project4")}</h4>
-                        </Link>                        
-                    </article>
-
-                    <article className={styles.article}>
-                        {/* "Calculadora - HTML5, Javascript y CSS"
-
-                        <Link href="https://github.com/Sil-Palaoro/courses-projects/tree/main/calculadora-js" title={t("project1")} target="_blank">                        
-                          <Image 
-                                  src="/calculadora.jpg"
-                                  fill={true}
-                                  alt={t("project1")}
-                                  className={styles.img} 
-                                  loading="lazy"
-                          />                        
-                          <h4 className={styles.h4}>{t("project1")}</h4>
-                        </Link>
-
-                    </article>
-
-                       <article className={styles.article}>
-                        {/*"Catalogo de productos - HTML5, Javascript y CSS", 
-
-                        <Link href="https://github.com/Sil-Palaoro/courses-projects/tree/main/catalogo" title={t("project3")} target="_blank">                        
-                          <Image 
-                                  src="/catalogo.jpg"
-                                  fill={true}
-                                  alt={t("project3")}
-                                  className={styles.img} 
-                                  loading="lazy"
-                          />                        
-                          <h4 className={styles.h4}>{t("project3")}</h4>
-                        </Link>
-
-                    </article>
-
-                    <article className={styles.article}>
-                        {/*"Formulario y tabla - HTML5, Javascript y CSS"
-
-                        <Link href="https://github.com/Sil-Palaoro/courses-projects/tree/main/formularioJS" title={t("project2")} target="_blank">                        
-                          <Image 
-                                  src="/formulario.jpg"
-                                  fill={true}
-                                  alt={t("project2")}
-                                  className={styles.img} 
-                                  loading="lazy"
-                          />                        
-                          <h4 className={styles.h4}>{t("project2")}</h4>
-                        </Link>
-
-                    </article>
-*/
