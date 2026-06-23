@@ -34,4 +34,4 @@ I believe the best way to learn is by building, which is why you'll find both ac
 ## 📫 Connect with me
 
 - LinkedIn: [www.linkedin.com/in/silvina-palaoro](https://www.linkedin.com/in/silvina-palaoro/)
-- Portfolio: [tu-portfolio.com](https://sil-palaoro-sdyw.vercel.app/)
+- Portfolio: [sil-palaoro-sdyw.vercel.app](https://sil-palaoro-sdyw.vercel.app/)
