@@ -29,3 +29,9 @@ I'm currently pursuing a University Degree in Full Stack Programming while conti
 - Continuous Learning
 
 I believe the best way to learn is by building, which is why you'll find both academic and real-world projects throughout my repositories.
+
+
+## 📫 Connect with me
+
+- LinkedIn: [www.linkedin.com/in/silvina-palaoro](https://www.linkedin.com/in/silvina-palaoro/)
+- Portfolio: [tu-portfolio.com](https://sil-palaoro-sdyw.vercel.app/)
