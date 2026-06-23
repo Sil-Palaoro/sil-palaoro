@@ -241,36 +241,46 @@ export default function Home() {
             </section>
             <section className={styles.languajes} id="skills">
                 <h2 className={styles.h2}>{t("tituloSkills")}</h2>
-                <p className={styles.p}><strong>
-                    Backend</strong> 
-                </p> 
-                <p className={styles.p}>
-                    Node.js - Python - Django REST Framework - Selenium web scraping - Django Channels and Websockets - SQL (SQLite, PostgreSQL)  
-                    - Express.js - Prisma - Postman - Firebase (Cloud Firestore) - Vercel - Firebase (Hosting) - Docker & Docker compose
-                </p> 
-                <p className={styles.p}><strong>                    
-                    Frontend                                      
-                </strong> 
-                </p> 
-                <p className={styles.p}>
-                React.js - Next.js - {t("i18n")} - Typescript - JavaScript - Storybook (VTDD) - HTML5 - CSS                 
-                </p>       
 
-                <p className={styles.p}><strong>                    
-                    {t("tituloOthers")}                                     
-                </strong> 
-                </p> 
-                <p className={styles.p}>
-                    Git (GitHub y GitLab) - Trello - Swagger - Vitest - TDD - Clean Architecture              
-                </p>  
-                
-                <p className={styles.p}><strong>                    
-                    {t("tituloLanguages")}                                    
-                </strong> 
-                </p> 
-                <p className={styles.p}>
-                    {t("languages_description")}                   
-                </p>  
+                <div className={styles.skillsContainer}>
+
+                    <div className={styles.skillCategory}>
+                        <h3 className={styles.skillCategoryTitle}>Backend</h3>
+                        <div className={styles.badgeRow}>
+                            {['Node.js','Python','Django REST Framework','Selenium','Django Channels','WebSockets','SQLite','PostgreSQL','Express.js','Prisma','Postman','Firebase','Docker'].map(s => (
+                                <span key={s} className={styles.badge}>{s}</span>
+                            ))}
+                        </div>
+                    </div>
+
+                    <div className={styles.skillCategory}>
+                        <h3 className={styles.skillCategoryTitle}>Frontend</h3>
+                        <div className={styles.badgeRow}>
+                            {['React.js','Next.js',t("i18n"),'TypeScript','JavaScript','Storybook','HTML5','CSS'].map(s => (
+                                <span key={s} className={styles.badge}>{s}</span>
+                            ))}
+                        </div>
+                    </div>
+
+                    <div className={styles.skillCategory}>
+                        <h3 className={styles.skillCategoryTitle}>{t("tituloOthers")}</h3>
+                        <div className={styles.badgeRow}>
+                            {['Git','GitHub','GitLab','Trello','Swagger','Vitest','TDD','Clean Architecture'].map(s => (
+                                <span key={s} className={styles.badge}>{s}</span>
+                            ))}
+                        </div>
+                    </div>
+
+                    <div className={styles.skillCategory}>
+                        <h3 className={styles.skillCategoryTitle}>{t("tituloLanguages")}</h3>
+                        <div className={styles.badgeRow}>
+                            {t("languages_description").split(' - ').map(lang => (
+                                <span key={lang} className={styles.badge}>{lang}</span>
+                            ))}
+                        </div>
+                    </div>
+
+                </div>
             </section>
 
 
