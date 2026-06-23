@@ -21,7 +21,7 @@ I'm currently pursuing a University Degree in Full Stack Programming while conti
 
 ### 🌱 Interests
 
-- Frontend & Backend Development
+- Backend & Frontend Development
 - Web Architecture
 - REST APIs
 - Automation
