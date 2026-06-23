@@ -747,6 +747,46 @@
     transform: scale(0.7);
   }
   
+  .heroActions{
+  display: flex;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.heroButton{
+  padding: 0.9rem 1.8rem;
+  border-radius: 999px;
+  text-decoration: none;
+
+  font-family: 'Raleway', serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+
+  background: linear-gradient(
+    45deg,
+    #8b4394 0%,
+    #d4c6f9 50%,
+    #fdcebb 100%
+  );
+
+  color: #181818;
+
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease;
+
+  box-shadow:
+    0 4px 12px rgba(139, 67, 148, 0.25);
+}
+
+.heroButton:hover{
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 8px 20px rgba(139, 67, 148, 0.35);
+}
   
   /* :root {
     --blanco: #e0e0e0;

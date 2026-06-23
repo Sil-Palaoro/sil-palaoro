@@ -37,7 +37,31 @@ export default function Home() {
                 
                 <section className={styles.seccion} id="home">
                     <h2 className={styles.h2}>Silvina Palaoro</h2>
-                    <h3 className={styles.h3}>Backend Developer</h3>
+                    <h3 className={styles.h3}>Backend/Fullstack Developer</h3>
+
+<div className={styles.heroActions}>
+  <a href="#projects" className={styles.heroButton}>
+    Ver proyectos
+  </a>
+
+  <a
+    href="https://www.linkedin.com/in/silvina-palaoro/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className={styles.heroButton}
+  >
+    LinkedIn
+  </a>
+
+  <a
+    href="https://github.com/Sil-Palaoro"
+    target="_blank"
+    rel="noopener noreferrer"
+    className={styles.heroButton}
+  >
+    GitHub
+  </a>
+</div>
                 </section>
             </div>
               
